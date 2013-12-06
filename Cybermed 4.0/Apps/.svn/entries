@@ -1,119 +1,0 @@
-10
-
-dir
-858
-http://seshet.de.ufpb.br/svn/cybermed/tag/cybermed-3.0/Apps
-http://seshet.de.ufpb.br/svn/cybermed
-
-
-
-2012-11-26T19:56:43.551951Z
-850
-ives
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-9af0023b-20d9-440c-9350-37057e9e1e61
-
-SimpleGloveApplication
-dir
-
-SimpleAssess
-dir
-
-SimpleVisualization
-dir
-
-OBBCollisionTest
-dir
-
-SimpleDeformation
-dir
-
-.directory
-file
-
-
-
-
-2012-12-05T17:58:21.549363Z
-88a8edc80428d23ffc121368ddd55cca
-2012-11-26T19:56:43.551951Z
-850
-ives
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-50
-
-StereoVisualization
-dir
-
-SimpleTrackerApplication
-dir
-
-OpticalTrackerApplication
-dir
-
-SimpleAssessNB
-dir
-
-CollaborativeApplications
-dir
-
-SimpleAssessFNB
-dir
-
-SimpleAssessGNB
-dir
-
-SimpleTexturing
-dir
-
-BroadCollisionTest
-dir
-
-SimpleCollisionCheck
-dir
-
-SimpleHMDVisualization
-dir
-
-PHANToM_Calibrator
-dir
-
-SimpleAssessFGNB
-dir
-
-SimpleHapticsAplication
-dir
-
