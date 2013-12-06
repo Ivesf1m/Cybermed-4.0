@@ -1,0 +1,24 @@
+In include
+	cybBroadCollision.h
+		mfList<cybMesh<cybTraits>::sCell *> listOfTriangles;
+
+		mfList<cybMesh<cybTraits>::sCell *>* getListOfTrianglesReference();
+
+	cybSphereTriangle.h
+		using namespace mf;
+
+		void collision(mfList<cybMesh<cybTraits>::sCell *>* list);
+
+
+	cybNarrowCollision.h
+		virtual void collision(mfList<cybMesh<cybTraits>::sCell *>* list) = 0;
+
+In SRC
+	cybBroadCollision.cpp
+		mfList<cybMesh<cybTraits>::sCell*>* CybBroadCollision::getListOfTrianglesReference()
+
+	cybSphereTriangle.cpp
+		void CybSphereTriangle::collision(mfList<cybMesh<cybTraits>::sCell *>* list)
+
+		In void CybSphereTriangle::collision()
+			mfCellsIterator<cybTraits> cInterator(cybCore->mesh[this->layerOfCollision]);
