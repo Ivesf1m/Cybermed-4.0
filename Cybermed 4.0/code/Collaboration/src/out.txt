@@ -1,0 +1,9 @@
+cybCollaboration.cpp:			remoteInterator = (CybRemoteInterator*) CybInteratorFactory::getInterator(REMOTE_INTERATOR);
+cybCollaboration.cpp:			remoteInterator = (CybRemoteInterator*) CybInteratorFactory::getInterator(REMOTE_HAPTIC_INTERATOR);
+cybCollaboration.cpp:			remoteInterator = (CybRemoteInterator*) CybInteratorFactory::getInterator(REMOTE_GLOVE_INTERATOR); 
+cybCollaboration.cpp~:			remoteInterator = (CybRemoteInterator*) CybInteratorFactory::getInterator(REMOTE_INTERATOR);
+cybCollaboration.cpp~:			remoteInterator = (CybRemoteInterator*) CybInteratorFactory::getInterator(REMOTE_HAPTIC_INTERATOR);
+cybCollaboration.cpp~:			remoteInterator = (CybRemoteInterator*) CybInteratorFactory::getInterator(REMOTE_GLOVE_INTERATOR); 
+cybDefaultCollaboration.cpp:	CybInterator* interator = CybInteratorFactory::getInterator(MOUSE_INTERATOR);
+cybGloveCollaboration.cpp:	CybInterator* interator = CybInteratorFactory::getInterator(GLOVE_5DT_INTERATOR);
+cybHapticCollaboration.cpp:	CybInterator* interator = CybInteratorFactory::getInterator(HAPTIC_INTERATOR);
