@@ -1,0 +1,20 @@
+CC=g++
+CFLAGS+= -DNDEBUG -Dlinuxl
+LIBS = -lglut -lGLU -lpthread -lcybview -lcybcore -lcybutil -lcybhaptics -lcybnetwork -lcybcollaboration -lrt
+INCLUDES = -I/usr/include/cybermed/mf
+
+TARGET=HapticServer
+HDRS=
+SRCS=HapticServer.cpp
+OBJS=$(SRCS:.cpp=.o)
+
+.PHONY: all
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CC) $(INCLUDES) $(CFLAGS) -o $@ $(SRCS) $(LIBS)
+
+.PHONY: clean
+clean:
+	-rm -f $(OBJS) $(TARGET)
+

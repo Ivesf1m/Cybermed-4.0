@@ -1,0 +1,10 @@
+SimpleCollaboration
+=================
+
+Compilation
+-----------
+To this app work the modules: UTILS, CORE, VIEW, NETWORK and COLLABORATION from cybermed might be installed
+
+Utilization
+-----------
+The first step is to run the Server App and then run the Client informing the Server IP address. Once the application is started you should activate the interator (by clicking "i" in the keyboard). 

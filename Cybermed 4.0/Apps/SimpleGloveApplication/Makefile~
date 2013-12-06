@@ -1,0 +1,20 @@
+CC=g++
+CFLAGS+= -DNDEBUG -Dlinux
+LIBS = -lglut -lpthread -lcybview -lrt -lGL -lGLU -lcybutil -lcybcore
+INCLUDES = -I/usr/include/cybermed/of
+
+TARGET=GloveApp
+HDRS=
+SRCS=main.cpp cybHandModel.cpp cybUpdate5dt14Model.cpp cybViewMono.cpp -lcybglove -lcybtrackers -lcybcollaboration 
+OBJS=$(SRCS:.cpp=.o)
+
+.PHONY: all
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CC) -w $(INCLUDES) $(CFLAGS) -o $@ $(SRCS) $(LIBS)
+
+.PHONY: clean
+clean:
+	-rm -f $(OBJS) $(TARGET)
+

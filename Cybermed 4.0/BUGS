@@ -1,0 +1,18 @@
+CyberMed bugs and issues
+========================
+
+Bugs should be reported to the bug tracker on the Sourceforge project page, at
+http://sourceforge.net/tracker/?group_id=200384&atid=973286
+
+Bugs and issues listed here may not be up to date or be the same reported
+at the bug tracker. As the bug tracker is a better tool for updates on issues,
+users should look there first for information on bugs. Developers may find this
+list useful, as the bug-related information contained here is usually more
+technical than on the bug tracker.
+
+Recent bugs
+-----------
+
+* The use of relative paths to textures is not possible
+* Once that haptics or collaboration modules where installed, apps that doesn't use haptic or collaboration will not work
+* The haptic module can't be installed in separated, it's always necessary to recompile all the cybermed

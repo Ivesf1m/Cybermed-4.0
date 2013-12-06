@@ -1,0 +1,11 @@
+SimpleDeformation
+=================
+
+Compilation
+-----------
+To this app work the modules: UTILS, CORE, VIEW, COLLISION and DEFORMATION from cybermed might be installed
+
+Utilization
+-----------
+Once the application is started you should activate the interator (by clicking "i" in the keyboard). Then you should send the interator deepper in the z axis, by pressing the right button and drangging the mouse. Once you interator collideswith the monkey head you will see its slow deformation;
+

@@ -1,0 +1,31 @@
+CyberMed 
+========
+
+CyberMed is a powerful framework designed to assist the development of virtual
+reality applications. It consists of various libraries that provide high level
+access and programming, abstracting aspects such as evaluation, haptic
+interaction and 3D visualization using OpenGL. Through a robust, high
+performance database system, it is possible to import 3D models developed in
+other packages (such as 3D Studio Max and Blender 3D) and apply deformations 
+efficiently, enabling the creation of highly realistic aplications.
+
+CyberMed is used mainly for virtual reality researches but is aimed to be the
+defacto framework for interactive applications development. The package's
+libraries may also be used separately, providing the developer with a high
+level tool to enhance individual aspects of applications.
+
+
+Instalation
+-----------
+
+For instalation information please see the INSTALL file.
+
+
+Contact
+-------
+Federal University of Paraíba
+Department of Informatics
+LabTEVE - Laboratory of Technologies for Virtual Teaching and Statistics
+http://www.de.ufpb.br/~labteve
+E-mail: liliane@di.ufpb.br
+Phone: (+55 83) 3216-7565 ext 31

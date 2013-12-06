@@ -1,0 +1,2 @@
+If only modules UTILS, CORE and VIEW are installed, this App works fine.
+If all modules are installed it will only work if you have Phantom Device pluged and configured. 

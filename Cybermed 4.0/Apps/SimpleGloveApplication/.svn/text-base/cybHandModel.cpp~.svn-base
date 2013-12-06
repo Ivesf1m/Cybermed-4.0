@@ -1,0 +1,47 @@
+#include <GL/glut.h>
+#include <string>
+#include "cybHandModel.h"
+#include "cybUpdate5dt14Model.h"
+using namespace std;
+
+CybHandModel::CybHandModel() {
+	string model[] = {"modelos/palma2.wrl", "modelos/baseD1.wrl", "modelos/meioD1.wrl",
+	"modelos/pontaD1.wrl", "modelos/baseD2_4.wrl", "modelos/meioD2_2.wrl", "modelos/pontaD1.wrl",
+	"modelos/baseD4.wrl", "modelos/meioD4_8.wrl", "modelos/pontaD4.wrl", "modelos/basededao.wrl",
+	"modelos/pontaDedao_2.wrl"};
+	//Reference to an object CybMultiModel
+	bool teste = getModels()->loadModels(model, 12);
+
+	if (!teste) {
+		exit(1);
+	}
+	else {
+		cout << "Loaded models!" << endl;
+	}
+}//CybHandModel
+
+void CybHandModel::draw() {
+	CybMultiModel *model = getModels();
+	glPushMatrix();
+				model->drawModel(1);
+	glPopMatrix();
+
+
+}//draw
+
+
+void CybHandModel::setEixos(float eixos[]) {
+	for (int i = 0; i < 18; ++i) {
+		eixo[i] = eixos[i];
+	}
+}
+
+/*void CybHandModel::update() {
+	getUpdate()->update(getDevice(), this);
+}*/
+
+void CybHandModel::setUpdateModel(string type) {
+	if(type.compare("DG14 Ultra USB") == 0) {
+		setUpdate(new CybUpdate5dt14Model());
+		}
+}

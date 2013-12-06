@@ -1,0 +1,20 @@
+CC=g++
+CFLAGS+= -DNDEBUG -Dlinux
+LIBS = -lglut -lpthread -lcybcore -lcybview -lcybhaptics -lrt -lcybglove -lcybcollaboration
+INCLUDES = -I/usr/include/cybermed/of
+
+TARGET=Calibrator
+HDRS=
+SRCS=main.cpp MenuHandler.cpp
+OBJS=$(SRCS:.cpp=.o)
+
+.PHONY: all
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CC) $(INCLUDES) $(CFLAGS) -o $@ $(SRCS) $(LIBS)
+
+.PHONY: clean
+clean:
+	-rm -f $(OBJS) $(TARGET)
+

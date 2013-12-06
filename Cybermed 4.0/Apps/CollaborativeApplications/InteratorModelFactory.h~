@@ -1,0 +1,20 @@
+#include<cybermed/collaborationModelFactory.h> 
+
+class InteratorModelFactory : public CollaborationModelFactory {
+	public:
+		enum NameModel {SPHERE, MONKEY, NEDDLE};
+		CollaborationModel *getModel(int id) {			
+			switch (id) {				
+				case 0:
+					return new CollaborationModel("esfera.wrl");
+					break;
+				case 1:
+					return new CollaborationModel("monkey.wrl");
+					break;
+				
+				case 2: return new CollaborationModel("agulha_unida2.wrl");
+					break;				
+				
+			}		
+		}
+};

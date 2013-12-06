@@ -1,0 +1,16 @@
+SimpleCollisionCheck 
+====================
+
+Compilation
+-----------
+
+To this App works fine, the modules: UTILS, CORE, VIEW and COLLISION from cybermed might be installed.
+
+
+Utilization
+-----------
+
+Once the application is started you should activate the interator (by clicking "i" in the keyboard). Then you should send the interator deepper in the z axis, by pressing the right button and drangging the mouse. Once you interator collides with the monkey head you will see its collor change;
+
+
+

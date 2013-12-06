@@ -1,0 +1,9 @@
+SimpleTrackerApplication
+========================
+
+Compilation
+-----------
+To this app work the modules UTILS, CORE, VIEW, COLLISION, DEFORMATION AND TRACKERS from Cybermed might be installed.
+The system has to be the libfob installed too (fob.sourceforge.net).
+
+

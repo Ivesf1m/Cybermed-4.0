@@ -1,0 +1,50 @@
+CyberMed Installation
+=====================
+
+This document describes the installation of the CyberMed package. 
+
+CyberMed aims to provide a high level approach to the development of virtual
+reality applications. It supports experience evaluation, haptic interaction,
+stereoscopic visualization, mesh deformation and collision detection. 
+
+CyberMed consists of various libraries that are installed in the system. The
+package can be installed as a whole or may have libraries installed separately.
+
+
+Installation from source code
+-----------------------------
+
+The source code can be downloaded from the SVN repository, located in
+Sourceforge.net,
+
+	http://sourceforge.net/projects/cybermed/
+
+The package can be easily built and installed using the makefiles. It's
+important to notice that due to CyberMed being a set of libraries, you need to
+be logged in as root or a privileged user to install. Simply call a make command
+inside the /code/ directory.
+
+You can also install the package through a shellscript. Inside the code folder,
+as root, call the following command:
+
+	./packmanager.sh install all
+
+Specific libraries may be installed separately, using the following commands:
+
+	./packmanager.sh install utils
+	./packmanager.sh install core
+	./packmanager.sh install view
+	./packmanager.sh install assess
+	./packmanager.sh install collision
+	./packmanager.sh install deformation
+	./packmanager.sh install network
+	./packmanager.sh install collaboration
+	./packmanager.sh install haptics (this will only work with appropriate haptic device)
+	./packmanager.sh install optical_trackers (this will only work with appropriate libraries and cam devices)
+	./packmanager.sh install magnetic_trackers (this will only work with appropriate tracker device)
+
+Uninstallation
+-----------------------------
+	./packmanager.sh uninstall
+	./packmanager.sh clean
+

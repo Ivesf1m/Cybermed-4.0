@@ -1,0 +1,20 @@
+CC=g++
+CFLAGS+= -DNDEBUG -Dlinux -g -ggdb
+LIBS = -lglut -lGLU -lpthread -lcybcore -lcybview -lcybnetwork -lcybcollaboration -lrt -lcybglove -lcybtrackers
+INCLUDES = -I/usr/include/cybermed/of
+
+TARGET=SimpleCollaborationServer
+HDRS=
+SRCS=SimpleCollaborationServer.cpp
+OBJS=$(SRCS:.cpp=.o)
+
+.PHONY: all
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CC) $(INCLUDES) $(CFLAGS) -o $@ $(SRCS) $(LIBS)
+
+.PHONY: clean
+clean:
+	-rm -f $(OBJS) $(TARGET)
+

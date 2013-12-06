@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck
+END
+esfera.wrl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/esfera.wrl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/README
+END
+collisionCheck.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/collisionCheck.h
+END
+SimpleCollisionCheck
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/SimpleCollisionCheck
+END
+SimpleCollisionCheck.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/SimpleCollisionCheck.cpp
+END
+monkey.wrl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/SimpleCollisionCheck/monkey.wrl
+END

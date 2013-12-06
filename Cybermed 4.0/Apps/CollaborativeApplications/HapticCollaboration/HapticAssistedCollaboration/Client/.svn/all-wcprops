@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client
+END
+HapticClient
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/HapticClient
+END
+HapticClient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/HapticClient.cpp
+END
+esfera.wrl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/esfera.wrl
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/Makefile
+END
+.directory
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/.directory
+END
+agulha_unida.wrl
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/agulha_unida.wrl
+END
+monkey.wrl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/monkey.wrl
+END
+HapticClient.cpp~
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/HapticClient.cpp~
+END
+agulha_unida2.wrl
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/cybermed/!svn/ver/850/tag/cybermed-3.0/Apps/CollaborativeApplications/HapticCollaboration/HapticAssistedCollaboration/Client/agulha_unida2.wrl
+END

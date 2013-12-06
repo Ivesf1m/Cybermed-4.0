@@ -1,0 +1,10 @@
+SimpleHapticAssistedCollaboration
+=================
+
+Compilation
+-----------
+To this app work the modules: UTILS, CORE, VIEW, HAPTICS, NETWORK and COLLABORATION from cybermed might be installed
+
+Utilization
+-----------
+The first step is to run the Server App and then run the Client informing the Server IP address.

@@ -1,0 +1,29 @@
+#include <cybermed/cybNaiveBayes.h>
+#include <cybermed/cybNaiveBayesIO.h>
+#include <iostream>
+
+int main() {
+
+		CybNaiveBayes* gnb = new CybNaiveBayes(3);
+		CybNaiveBayesIO* gnbIO = new CybNaiveBayesIO("/root/gnbTest");
+		CybNaiveBayesIO* gnbIO_2 = new CybNaiveBayesIO("/root/gnbTest2");
+
+		printf("%s", gnbIO->getFile());
+
+		//We dont need to read the parameters, we can call training() see more below
+		//gnb = (CybNaiveBayes*) gnbIO->read()
+
+		for (int i=0; i<gnbIO->readData()->size(); i++)
+		{
+			gnb->addData(gnbIO->readData()->pos(i)); //adding data to list
+		}	
+
+		gnb->training(); //calling training() to get parameters
+		gnbIO_2->write(gnb); //writing parameters
+		gnbIO_2->writeData(gnb); //writing data
+
+		delete gnb;
+		delete gnbIO;
+		delete gnbIO_2;
+		return 0;
+}
