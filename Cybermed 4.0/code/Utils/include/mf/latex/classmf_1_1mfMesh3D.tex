@@ -1,0 +1,464 @@
+\hypertarget{classmf_1_1mfMesh3D}{
+\section{mf::mfMesh3D$<$ \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfMesh3D}\index{mf::mfMesh3D@{mf::mfMesh3D}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \_\-Traits::space \hyperlink{classmf_1_1mfMesh3D_aea7155b49fb50982a399056973e6b4d8}{space}
+\item 
+typedef \_\-Traits::ids \hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids}
+\item 
+typedef \_\-Traits::sVertex \hyperlink{classmf_1_1mfMesh3D_ac523ee47bc707949d351f9f73d09677e}{sVertex}
+\item 
+typedef \_\-Traits::sCell \hyperlink{classmf_1_1mfMesh3D_acbb717ca80998e53d622ab2ae35b9134}{sCell}
+\item 
+typedef \_\-Traits::sEdge \hyperlink{classmf_1_1mfMesh3D_a93992ed7712bd9dbcc0430166a540d1c}{sEdge}
+\item 
+typedef \_\-Traits::sEdge \hyperlink{classmf_1_1mfMesh3D_ae70500195d62c66dc79d18394652a2af}{sFace}
+\item 
+typedef \_\-Traits::sOper \hyperlink{classmf_1_1mfMesh3D_ab30b285a3a7387627cf13798561050a0}{sOper}
+\item 
+typedef \_\-Traits::sTopology \hyperlink{classmf_1_1mfMesh3D_af51322fa414c9ddd714ef2088651a794}{sTopology}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfMesh3D_a91b5fd82f7f202d9b01519e4baad3f93}{mfMesh3D} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} block\_\-size=5000)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_af54049813d1e1050fc123fcbca6b10c1}{$\sim$mfMesh3D} ()
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_acd7ae4e46082dc88ff6a2ec0e3833997}{addVertex} (\hyperlink{classmf_1_1mfMesh3D_aea7155b49fb50982a399056973e6b4d8}{space} $\ast$coords MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfMesh3D_a6cef73e9208a423066e439f30c852a0a}{delVertex} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idvertex MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a542735e173f7c4937bd9fd6ae9dae715}{getNumberOfVertices} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a3ad267a7abdfec7e511c93031b6304a3}{getVertexMaxId} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_ac523ee47bc707949d351f9f73d09677e}{sVertex} $\ast$ \hyperlink{classmf_1_1mfMesh3D_ab3b20eb8024e905f22dca14b139ec1a8}{getVertex} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idvertex MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfMesh3D_afec11a472590da7e8f7740a0bddce106}{isVertex} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idvertex MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a237521684246bd6c5171e72aa95cdf2b}{addCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} $\ast$idvertices MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfMesh3D_a75f082e8b945188ab1996193a527b143}{delCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idcell MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a7a5fb0879d87329788fee8ffdfd64932}{getNumberOfCells} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a73c24174352c1b169b9b82a8dd51a01c}{getCellMaxId} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_acbb717ca80998e53d622ab2ae35b9134}{sCell} $\ast$ \hyperlink{classmf_1_1mfMesh3D_aaad815afdc1d7e0e49cd4e904db6cc93}{getCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idcell MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfMesh3D_a578c15c12e4d351e61b4d88b6d844049}{isCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idcell MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfMesh3D_a5db400ff5cacf7832427b58f2b5c10a5}{setNumberOfVertices} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} number MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfMesh3D_a4d70787f5afc60ec09d0ede007cc92c4}{setNumberOfCells} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} number MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfMesh3D_a5db5e246c9c63b3988e1606f03bf8715}{addVertex} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idvertex, \hyperlink{classmf_1_1mfMesh3D_aea7155b49fb50982a399056973e6b4d8}{space} $\ast$coords MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfMesh3D_a399b9e8291ea7bc29fa09faaed72db61}{addCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idcell, \hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} $\ast$idvertices MF\_\-DMUTEXVD)
+\item 
+\hypertarget{classmf_1_1mfMesh3D_a7e80d96081ccab4af16ddf3c3a76071e}{
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} {\bfseries addCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} $\ast$idvertices, \hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} $\ast$idops MF\_\-DMUTEXVD)}
+\label{classmf_1_1mfMesh3D_a7e80d96081ccab4af16ddf3c3a76071e}
+
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a10ce55cc76de42b5aa0f7c4244763f44}{addEdge} ()
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_adaf8348280fa19542ea5de9ba47f1d12}{getNumberOfEdges} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} \hyperlink{classmf_1_1mfMesh3D_a2dd4c8a343fa1173b6a7c78b4aa050b0}{getEdgeMaxId} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfMesh3D_a93992ed7712bd9dbcc0430166a540d1c}{sEdge} $\ast$ \hyperlink{classmf_1_1mfMesh3D_a7a033f10bb1bc509d62a53f34086e220}{getEdge} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idEdge MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfMesh3D_a63b15118d28b6f6ceb4b19670148788a}{isEdge} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idEdgex MF\_\-DMUTEXVD)
+\item 
+\hypertarget{classmf_1_1mfMesh3D_a4bba26cee832afb1474ae9e8f6549525}{
+\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} {\bfseries getBlockSize} ()}
+\label{classmf_1_1mfMesh3D_a4bba26cee832afb1474ae9e8f6549525}
+
+\item 
+\hypertarget{classmf_1_1mfMesh3D_a5c1dd2261484b87e16fddbe0e276a977}{
+void {\bfseries freeCell} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idcell MF\_\-DMUTEXVD)}
+\label{classmf_1_1mfMesh3D_a5c1dd2261484b87e16fddbe0e276a977}
+
+\item 
+\hypertarget{classmf_1_1mfMesh3D_a859fade6e91a75968a66e72aa33f6a4a}{
+void {\bfseries freeVertex} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idvertex MF\_\-DMUTEXVD)}
+\label{classmf_1_1mfMesh3D_a859fade6e91a75968a66e72aa33f6a4a}
+
+\item 
+\hypertarget{classmf_1_1mfMesh3D_a437b244a6f61a1f0d225cff9c739b064}{
+void {\bfseries freeEdge} (\hyperlink{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{ids} idedge MF\_\-DMUTEXVD)}
+\label{classmf_1_1mfMesh3D_a437b244a6f61a1f0d225cff9c739b064}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$class \_\-Traits$>$ class mf::mfMesh3D$<$ \_\-Traits $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!ids@{ids}}
+\index{ids@{ids}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::ids {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf ids}}}
+\label{classmf_1_1mfMesh3D_aeae559d0564bf64617c8fd83ba264895}
+Id typename definition \hypertarget{classmf_1_1mfMesh3D_acbb717ca80998e53d622ab2ae35b9134}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!sCell@{sCell}}
+\index{sCell@{sCell}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{sCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sCell {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf sCell}}}
+\label{classmf_1_1mfMesh3D_acbb717ca80998e53d622ab2ae35b9134}
+Cell typename definition \hypertarget{classmf_1_1mfMesh3D_a93992ed7712bd9dbcc0430166a540d1c}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!sEdge@{sEdge}}
+\index{sEdge@{sEdge}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{sEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sEdge {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf sEdge}}}
+\label{classmf_1_1mfMesh3D_a93992ed7712bd9dbcc0430166a540d1c}
+Edge typename definition \hypertarget{classmf_1_1mfMesh3D_ae70500195d62c66dc79d18394652a2af}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!sFace@{sFace}}
+\index{sFace@{sFace}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{sFace}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sEdge {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf sFace}}}
+\label{classmf_1_1mfMesh3D_ae70500195d62c66dc79d18394652a2af}
+Edge typename definition \hypertarget{classmf_1_1mfMesh3D_ab30b285a3a7387627cf13798561050a0}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!sOper@{sOper}}
+\index{sOper@{sOper}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{sOper}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sOper {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf sOper}}}
+\label{classmf_1_1mfMesh3D_ab30b285a3a7387627cf13798561050a0}
+Operator typename definition \hypertarget{classmf_1_1mfMesh3D_aea7155b49fb50982a399056973e6b4d8}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!space@{space}}
+\index{space@{space}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{space}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::space {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf space}}}
+\label{classmf_1_1mfMesh3D_aea7155b49fb50982a399056973e6b4d8}
+Space typename definition \hypertarget{classmf_1_1mfMesh3D_af51322fa414c9ddd714ef2088651a794}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!sTopology@{sTopology}}
+\index{sTopology@{sTopology}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{sTopology}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sTopology {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf sTopology}}}
+\label{classmf_1_1mfMesh3D_af51322fa414c9ddd714ef2088651a794}
+Topology typename definition \hypertarget{classmf_1_1mfMesh3D_ac523ee47bc707949d351f9f73d09677e}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!sVertex@{sVertex}}
+\index{sVertex@{sVertex}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{sVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sVertex {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf sVertex}}}
+\label{classmf_1_1mfMesh3D_ac523ee47bc707949d351f9f73d09677e}
+Vertex typename definition 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfMesh3D_a91b5fd82f7f202d9b01519e4baad3f93}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!mfMesh3D@{mfMesh3D}}
+\index{mfMesh3D@{mfMesh3D}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{mfMesh3D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::{\bf mfMesh3D} (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{block\_\-size = {\ttfamily 5000}}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a91b5fd82f7f202d9b01519e4baad3f93}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\_\-size,:} & size of vector blocks. The maximum size of vector is block\_\-size $\ast$ block\_\-size \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMesh3D_af54049813d1e1050fc123fcbca6b10c1}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!$\sim$mfMesh3D@{$\sim$mfMesh3D}}
+\index{$\sim$mfMesh3D@{$\sim$mfMesh3D}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{$\sim$mfMesh3D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::$\sim${\bf mfMesh3D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_af54049813d1e1050fc123fcbca6b10c1}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfMesh3D_a237521684246bd6c5171e72aa95cdf2b}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!addCell@{addCell}}
+\index{addCell@{addCell}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{addCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::addCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} $\ast$idvertices}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a237521684246bd6c5171e72aa95cdf2b}
+Add a cell in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idvertices,:} & vector with vertices ids of the cell\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cell id in mesh 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_a399b9e8291ea7bc29fa09faaed72db61}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!addCell@{addCell}}
+\index{addCell@{addCell}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{addCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::addCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{idcell, }
+\item[{{\bf ids} $\ast$idvertices}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a399b9e8291ea7bc29fa09faaed72db61}
+Add a cell in specified position in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idvertex,:} & position of cell \\
+\hline
+{\em idvertices,:} & vector with vertices ids of the cell\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cell id in mesh 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_a10ce55cc76de42b5aa0f7c4244763f44}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{addEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::addEdge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a10ce55cc76de42b5aa0f7c4244763f44}
+Add a edge in mesh
+
+\begin{DoxyReturn}{Returns}
+the edge id in mesh 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_acd7ae4e46082dc88ff6a2ec0e3833997}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{addVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::addVertex (
+\begin{DoxyParamCaption}
+\item[{{\bf space} $\ast$coords}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_acd7ae4e46082dc88ff6a2ec0e3833997}
+Add a vertex in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em coords,:} & vector with the vertex coordinates\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vertex id in mesh 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_a5db5e246c9c63b3988e1606f03bf8715}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{addVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::addVertex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{idvertex, }
+\item[{{\bf space} $\ast$coords}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a5db5e246c9c63b3988e1606f03bf8715}
+Add a vertex in specified position in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idvertex,:} & position of vertex \\
+\hline
+{\em coords,:} & vector with the vertex coordinates\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the vertex id in mesh 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_a75f082e8b945188ab1996193a527b143}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!delCell@{delCell}}
+\index{delCell@{delCell}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{delCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ bool {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::delCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idcell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a75f082e8b945188ab1996193a527b143}
+Delete a cell in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idcell,:} & the cell is\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the cell was deleted 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_a6cef73e9208a423066e439f30c852a0a}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!delVertex@{delVertex}}
+\index{delVertex@{delVertex}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{delVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ bool {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::delVertex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idvertex}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a6cef73e9208a423066e439f30c852a0a}
+Delete a vertex in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idvertex,:} & the vertex will be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the vertex was deleted 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfMesh3D_aaad815afdc1d7e0e49cd4e904db6cc93}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getCell@{getCell}}
+\index{getCell@{getCell}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ SCELL $\ast$ {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idcell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_aaad815afdc1d7e0e49cd4e904db6cc93}
+Return the cell address
+
+
+\begin{DoxyParams}{Parameters}
+{\em idcell,:} & the cell id \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMesh3D_a73c24174352c1b169b9b82a8dd51a01c}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getCellMaxId@{getCellMaxId}}
+\index{getCellMaxId@{getCellMaxId}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getCellMaxId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getCellMaxId (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a73c24174352c1b169b9b82a8dd51a01c}
+Return the greater cell id in mesh \hypertarget{classmf_1_1mfMesh3D_a7a033f10bb1bc509d62a53f34086e220}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getEdge@{getEdge}}
+\index{getEdge@{getEdge}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ SEDGE $\ast$ {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getEdge (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idEdge}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a7a033f10bb1bc509d62a53f34086e220}
+Return the edge address
+
+
+\begin{DoxyParams}{Parameters}
+{\em idvertex,:} & the vertex id \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMesh3D_a2dd4c8a343fa1173b6a7c78b4aa050b0}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getEdgeMaxId@{getEdgeMaxId}}
+\index{getEdgeMaxId@{getEdgeMaxId}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getEdgeMaxId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getEdgeMaxId (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a2dd4c8a343fa1173b6a7c78b4aa050b0}
+Return the greater edge id \hypertarget{classmf_1_1mfMesh3D_a7a5fb0879d87329788fee8ffdfd64932}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getNumberOfCells@{getNumberOfCells}}
+\index{getNumberOfCells@{getNumberOfCells}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getNumberOfCells}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getNumberOfCells (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a7a5fb0879d87329788fee8ffdfd64932}
+Return the number of cells in mesh \hypertarget{classmf_1_1mfMesh3D_adaf8348280fa19542ea5de9ba47f1d12}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getNumberOfEdges@{getNumberOfEdges}}
+\index{getNumberOfEdges@{getNumberOfEdges}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getNumberOfEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getNumberOfEdges (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_adaf8348280fa19542ea5de9ba47f1d12}
+Return the number of edges in mesh \hypertarget{classmf_1_1mfMesh3D_a542735e173f7c4937bd9fd6ae9dae715}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getNumberOfVertices@{getNumberOfVertices}}
+\index{getNumberOfVertices@{getNumberOfVertices}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getNumberOfVertices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getNumberOfVertices (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a542735e173f7c4937bd9fd6ae9dae715}
+Return the number of vertices in mesh \hypertarget{classmf_1_1mfMesh3D_ab3b20eb8024e905f22dca14b139ec1a8}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getVertex@{getVertex}}
+\index{getVertex@{getVertex}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ SVERTEX $\ast$ {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getVertex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idvertex}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_ab3b20eb8024e905f22dca14b139ec1a8}
+Return the vertex address
+
+
+\begin{DoxyParams}{Parameters}
+{\em idvertex,:} & the vertex id \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMesh3D_a3ad267a7abdfec7e511c93031b6304a3}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!getVertexMaxId@{getVertexMaxId}}
+\index{getVertexMaxId@{getVertexMaxId}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{getVertexMaxId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::getVertexMaxId (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a3ad267a7abdfec7e511c93031b6304a3}
+Return the greater vertex id \hypertarget{classmf_1_1mfMesh3D_a578c15c12e4d351e61b4d88b6d844049}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!isCell@{isCell}}
+\index{isCell@{isCell}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{isCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ bool {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::isCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idcell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a578c15c12e4d351e61b4d88b6d844049}
+Return if the specified cell id is a cell in mesh \hypertarget{classmf_1_1mfMesh3D_a63b15118d28b6f6ceb4b19670148788a}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!isEdge@{isEdge}}
+\index{isEdge@{isEdge}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{isEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ bool {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::isEdge (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idEdgex}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a63b15118d28b6f6ceb4b19670148788a}
+Return true if the specified edge id is a edge in mesh \hypertarget{classmf_1_1mfMesh3D_afec11a472590da7e8f7740a0bddce106}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!isVertex@{isVertex}}
+\index{isVertex@{isVertex}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{isVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ bool {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::isVertex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idvertex}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_afec11a472590da7e8f7740a0bddce106}
+Return true if the specified vertex id is a vertex in mesh \hypertarget{classmf_1_1mfMesh3D_a4d70787f5afc60ec09d0ede007cc92c4}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!setNumberOfCells@{setNumberOfCells}}
+\index{setNumberOfCells@{setNumberOfCells}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{setNumberOfCells}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::setNumberOfCells (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} number}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a4d70787f5afc60ec09d0ede007cc92c4}
+Define the number of cells
+
+(DONT USE) \hypertarget{classmf_1_1mfMesh3D_a5db400ff5cacf7832427b58f2b5c10a5}{
+\index{mf::mfMesh3D@{mf::mfMesh3D}!setNumberOfVertices@{setNumberOfVertices}}
+\index{setNumberOfVertices@{setNumberOfVertices}!mf::mfMesh3D@{mf::mfMesh3D}}
+\subsubsection[{setNumberOfVertices}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMesh3D}$<$ \_\-Traits $>$::setNumberOfVertices (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} number}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh3D_a5db400ff5cacf7832427b58f2b5c10a5}
+Define the number of vertices
+
+(DONT USE) 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mfMesh3D_8h}{mfMesh3D.h}\item 
+\hyperlink{mfMesh_8h}{mfMesh.h}\end{DoxyCompactItemize}

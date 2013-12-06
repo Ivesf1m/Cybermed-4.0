@@ -1,0 +1,161 @@
+\hypertarget{classmf_1_1mfMesh2D}{
+\section{mf::mfMesh2D$<$ \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfMesh2D}\index{mf::mfMesh2D@{mf::mfMesh2D}}
+}
+
+
+{\ttfamily \#include $<$mfMesh2D.h$>$}
+
+Inheritance diagram for mf::mfMesh2D$<$ \_\-Traits $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmf_1_1mfMesh2D}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \_\-Traits::ids \hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids}
+\item 
+\hypertarget{classmf_1_1mfMesh2D_ae76d2188c161d108b11b434253ac708a}{
+typedef \_\-Traits::sVertex {\bfseries sVertex}}
+\label{classmf_1_1mfMesh2D_ae76d2188c161d108b11b434253ac708a}
+
+\item 
+\hypertarget{classmf_1_1mfMesh2D_ad98ffaf6cec43224918e35b7272a5168}{
+typedef \_\-Traits::sCell {\bfseries sCell}}
+\label{classmf_1_1mfMesh2D_ad98ffaf6cec43224918e35b7272a5168}
+
+\item 
+\hypertarget{classmf_1_1mfMesh2D_a6bfcc84cc5bd3a12e15c8255c2e36b6b}{
+typedef \_\-Traits::sGeometric {\bfseries sGeometric}}
+\label{classmf_1_1mfMesh2D_a6bfcc84cc5bd3a12e15c8255c2e36b6b}
+
+\item 
+\hypertarget{classmf_1_1mfMesh2D_a360cbe8e1a25a9fb4234e3028be77fe6}{
+typedef \_\-Traits::sTopology {\bfseries sTopology}}
+\label{classmf_1_1mfMesh2D_a360cbe8e1a25a9fb4234e3028be77fe6}
+
+\item 
+\hypertarget{classmf_1_1mfMesh2D_adcf3197707a7cdd4a121b080b97c1ce1}{
+typedef \hyperlink{classmf_1_1mfSing}{mfSing}$<$ \_\-Traits $>$ {\bfseries sSing}}
+\label{classmf_1_1mfMesh2D_adcf3197707a7cdd4a121b080b97c1ce1}
+
+\item 
+typedef \_\-Traits::sMesh \hyperlink{classmf_1_1mfMesh2D_aa197f7f92e5aa8e68703a5eeb3d9ae04}{sMesh}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfMesh2D_a5cea95cc70113a2d0c3fcd2361386cc7}{mfMesh2D} (\hyperlink{classmf_1_1mfMesh2D_aa197f7f92e5aa8e68703a5eeb3d9ae04}{sMesh} $\ast$\_\-mesh)
+\item 
+\hyperlink{classmf_1_1mfMesh2D_a7758ae67057192a0f348a09b1f020a63}{$\sim$mfMesh2D} ()
+\item 
+void \hyperlink{classmf_1_1mfMesh2D_a03936ceb5649223ff6dc548cf22b4cf7}{addCell} (\hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids} idcell, \hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids} $\ast$idvertices MF\_\-DMUTEXVD)
+\item 
+\hypertarget{classmf_1_1mfMesh2D_aff5a924abb5bcce8be4595aa4a3b6137}{
+void {\bfseries addCell} (\hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids} idcell, \hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids} $\ast$idvertices, \hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids} $\ast$idops MF\_\-DMUTEXVD)}
+\label{classmf_1_1mfMesh2D_aff5a924abb5bcce8be4595aa4a3b6137}
+
+\item 
+void \hyperlink{classmf_1_1mfMesh2D_ada59f56b773f4951e2db41826ab8b644}{delCell} (\hyperlink{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{ids} idcell MF\_\-DMUTEXVD)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \_\-Traits$>$ class mf::mfMesh2D$<$ \_\-Traits $>$}
+
+Operation Class for Triangles in 2D space
+
+\_\-Traits must have: ids, sVertex, sCell, sSing, sMesh, sGeometric 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}{
+\index{mf::mfMesh2D@{mf::mfMesh2D}!ids@{ids}}
+\index{ids@{ids}!mf::mfMesh2D@{mf::mfMesh2D}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::ids {\bf mf::mfMesh2D}$<$ \_\-Traits $>$::{\bf ids}}}
+\label{classmf_1_1mfMesh2D_a517d508b5d1959b3c697f7c393ccd068}
+Id typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfMeshOper_a526d1466339244781fbdc0dbfe5ad210}{mf::mfMeshOper$<$ \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfMesh2D_aa197f7f92e5aa8e68703a5eeb3d9ae04}{
+\index{mf::mfMesh2D@{mf::mfMesh2D}!sMesh@{sMesh}}
+\index{sMesh@{sMesh}!mf::mfMesh2D@{mf::mfMesh2D}}
+\subsubsection[{sMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sMesh {\bf mf::mfMesh2D}$<$ \_\-Traits $>$::{\bf sMesh}}}
+\label{classmf_1_1mfMesh2D_aa197f7f92e5aa8e68703a5eeb3d9ae04}
+Mesh typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfMeshOper_a96c05da9a054cf9ac58d15211922f936}{mf::mfMeshOper$<$ \_\-Traits $>$}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfMesh2D_a5cea95cc70113a2d0c3fcd2361386cc7}{
+\index{mf::mfMesh2D@{mf::mfMesh2D}!mfMesh2D@{mfMesh2D}}
+\index{mfMesh2D@{mfMesh2D}!mf::mfMesh2D@{mf::mfMesh2D}}
+\subsubsection[{mfMesh2D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfMesh2D}$<$ \_\-Traits $>$::{\bf mfMesh2D} (
+\begin{DoxyParamCaption}
+\item[{{\bf sMesh} $\ast$}]{\_\-mesh}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh2D_a5cea95cc70113a2d0c3fcd2361386cc7}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-mesh,:} & the mesh address that this class will manipulate \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMesh2D_a7758ae67057192a0f348a09b1f020a63}{
+\index{mf::mfMesh2D@{mf::mfMesh2D}!$\sim$mfMesh2D@{$\sim$mfMesh2D}}
+\index{$\sim$mfMesh2D@{$\sim$mfMesh2D}!mf::mfMesh2D@{mf::mfMesh2D}}
+\subsubsection[{$\sim$mfMesh2D}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfMesh2D}$<$ \_\-Traits $>$::$\sim${\bf mfMesh2D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh2D_a7758ae67057192a0f348a09b1f020a63}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfMesh2D_a03936ceb5649223ff6dc548cf22b4cf7}{
+\index{mf::mfMesh2D@{mf::mfMesh2D}!addCell@{addCell}}
+\index{addCell@{addCell}!mf::mfMesh2D@{mf::mfMesh2D}}
+\subsubsection[{addCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMesh2D}$<$ \_\-Traits $>$::addCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{idcell, }
+\item[{{\bf ids} $\ast$idvertices}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh2D_a03936ceb5649223ff6dc548cf22b4cf7}
+Add cell in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idcell,:} & cell id \\
+\hline
+{\em idvertices,:} & vector with vertices ids of the cell \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMesh2D_ada59f56b773f4951e2db41826ab8b644}{
+\index{mf::mfMesh2D@{mf::mfMesh2D}!delCell@{delCell}}
+\index{delCell@{delCell}!mf::mfMesh2D@{mf::mfMesh2D}}
+\subsubsection[{delCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMesh2D}$<$ \_\-Traits $>$::delCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idcell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMesh2D_ada59f56b773f4951e2db41826ab8b644}
+Delete a cell
+
+
+\begin{DoxyParams}{Parameters}
+{\em idcell,:} & cell id \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+mfMesh2D.h\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\hypertarget{classmf_1_1mfMeshHybridSurface}{
+\section{mf::mfMeshHybridSurface$<$ \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfMeshHybridSurface}\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+}
+
+
+{\ttfamily \#include $<$mfMeshHybridSurface.h$>$}
+
+Inheritance diagram for mf::mfMeshHybridSurface$<$ \_\-Traits $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmf_1_1mfMeshHybridSurface}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \_\-Traits::ids \hyperlink{classmf_1_1mfMeshHybridSurface_a46dd7994ecadd8ead204ab52dcb632ca}{ids}
+\item 
+typedef \_\-Traits::sVertex \hyperlink{classmf_1_1mfMeshHybridSurface_a3739f5c613f7c0fce7946c0f4fdeeb1b}{sVertex}
+\item 
+typedef \_\-Traits::sCell \hyperlink{classmf_1_1mfMeshHybridSurface_ae8effc64c1dfb9b88223478812400505}{sCell}
+\item 
+typedef \hyperlink{classmf_1_1mfSing}{mfSing}$<$ \_\-Traits $>$ \hyperlink{classmf_1_1mfMeshHybridSurface_ac9e0a04d9e5f9cf40d751f7661ac9a7a}{sSing}
+\item 
+typedef \_\-Traits::sMesh \hyperlink{classmf_1_1mfMeshHybridSurface_a204a2dcbd0802b263253055d7d2d1b9a}{sMesh}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfMeshHybridSurface_afa40a6d452119c868d4996e3ec42dc0a}{mfMeshHybridSurface} (\hyperlink{classmf_1_1mfMeshHybridSurface_a204a2dcbd0802b263253055d7d2d1b9a}{sMesh} $\ast$\_\-mesh)
+\item 
+\hyperlink{classmf_1_1mfMeshHybridSurface_af72771dbaf0d5235ade66fe38308f872}{$\sim$mfMeshHybridSurface} ()
+\item 
+void \hyperlink{classmf_1_1mfMeshHybridSurface_a970d678d03168429e492eed98064602f}{addCell} (\hyperlink{classmf_1_1mfMeshHybridSurface_a46dd7994ecadd8ead204ab52dcb632ca}{ids} idcell, \hyperlink{classmf_1_1mfMeshHybridSurface_a46dd7994ecadd8ead204ab52dcb632ca}{ids} $\ast$idvertices MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfMeshHybridSurface_aa6726532e75edd42143a477d4036f9ad}{delCell} (\hyperlink{classmf_1_1mfMeshHybridSurface_a46dd7994ecadd8ead204ab52dcb632ca}{ids} idcell MF\_\-DMUTEXVD)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \_\-Traits$>$ class mf::mfMeshHybridSurface$<$ \_\-Traits $>$}
+
+Operation Class for Hybrid Surface in a 3D space (with oriented quadrilaterals)
+
+\_\-Traits must have: ids, sVertex, sCell, sSing, sMesh 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmf_1_1mfMeshHybridSurface_a46dd7994ecadd8ead204ab52dcb632ca}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!ids@{ids}}
+\index{ids@{ids}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::ids {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::{\bf ids}}}
+\label{classmf_1_1mfMeshHybridSurface_a46dd7994ecadd8ead204ab52dcb632ca}
+Id typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfMeshOper_a526d1466339244781fbdc0dbfe5ad210}{mf::mfMeshOper$<$ \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfMeshHybridSurface_ae8effc64c1dfb9b88223478812400505}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!sCell@{sCell}}
+\index{sCell@{sCell}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{sCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sCell {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::{\bf sCell}}}
+\label{classmf_1_1mfMeshHybridSurface_ae8effc64c1dfb9b88223478812400505}
+Cell typename definition \hypertarget{classmf_1_1mfMeshHybridSurface_a204a2dcbd0802b263253055d7d2d1b9a}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!sMesh@{sMesh}}
+\index{sMesh@{sMesh}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{sMesh}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sMesh {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::{\bf sMesh}}}
+\label{classmf_1_1mfMeshHybridSurface_a204a2dcbd0802b263253055d7d2d1b9a}
+Mesh typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfMeshOper_a96c05da9a054cf9ac58d15211922f936}{mf::mfMeshOper$<$ \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfMeshHybridSurface_ac9e0a04d9e5f9cf40d751f7661ac9a7a}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!sSing@{sSing}}
+\index{sSing@{sSing}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{sSing}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef {\bf mfSing}$<$\_\-Traits$>$ {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::{\bf sSing}}}
+\label{classmf_1_1mfMeshHybridSurface_ac9e0a04d9e5f9cf40d751f7661ac9a7a}
+Singular typename definition \hypertarget{classmf_1_1mfMeshHybridSurface_a3739f5c613f7c0fce7946c0f4fdeeb1b}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!sVertex@{sVertex}}
+\index{sVertex@{sVertex}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{sVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits::sVertex {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::{\bf sVertex}}}
+\label{classmf_1_1mfMeshHybridSurface_a3739f5c613f7c0fce7946c0f4fdeeb1b}
+Vertex typename definition 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfMeshHybridSurface_afa40a6d452119c868d4996e3ec42dc0a}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!mfMeshHybridSurface@{mfMeshHybridSurface}}
+\index{mfMeshHybridSurface@{mfMeshHybridSurface}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{mfMeshHybridSurface}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::{\bf mfMeshHybridSurface} (
+\begin{DoxyParamCaption}
+\item[{{\bf sMesh} $\ast$}]{\_\-mesh}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMeshHybridSurface_afa40a6d452119c868d4996e3ec42dc0a}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em \_\-mesh,:} & the mesh address that this class will manipulate \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMeshHybridSurface_af72771dbaf0d5235ade66fe38308f872}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!$\sim$mfMeshHybridSurface@{$\sim$mfMeshHybridSurface}}
+\index{$\sim$mfMeshHybridSurface@{$\sim$mfMeshHybridSurface}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{$\sim$mfMeshHybridSurface}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::$\sim${\bf mfMeshHybridSurface} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMeshHybridSurface_af72771dbaf0d5235ade66fe38308f872}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfMeshHybridSurface_a970d678d03168429e492eed98064602f}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!addCell@{addCell}}
+\index{addCell@{addCell}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{addCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::addCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{idcell, }
+\item[{{\bf ids} $\ast$idvertices}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMeshHybridSurface_a970d678d03168429e492eed98064602f}
+Add cell in mesh
+
+
+\begin{DoxyParams}{Parameters}
+{\em idcell,:} & cell id \\
+\hline
+{\em idvertices,:} & vector with vertices ids of the cell \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfMeshHybridSurface_aa6726532e75edd42143a477d4036f9ad}{
+\index{mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}!delCell@{delCell}}
+\index{delCell@{delCell}!mf::mfMeshHybridSurface@{mf::mfMeshHybridSurface}}
+\subsubsection[{delCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfMeshHybridSurface}$<$ \_\-Traits $>$::delCell (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} idcell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfMeshHybridSurface_aa6726532e75edd42143a477d4036f9ad}
+Delete a cell
+
+
+\begin{DoxyParams}{Parameters}
+{\em idcell,:} & cell id \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+mfMeshHybridSurface.h\end{DoxyCompactItemize}

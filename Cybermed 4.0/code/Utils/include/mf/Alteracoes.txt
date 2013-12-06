@@ -1,0 +1,57 @@
+Renomear a OF (Opposite Face) para MF (Mate Face)
+
+mfTraits:
+	adição da mfDefaultQuadSurface
+
+mfWrlReader:
+	adição das funções bool read(sMesh* malha, const char* filename, int cellDimension);
+			   bool reader(ifstream &pf, sMesh* malha, int cellDimension);
+		- Estas funções permitem setar quantos vertices tem a célula lida.
+
+mfMeshQuadSurface:
+	adição desta classe.
+	Permitindo adição de células quadriláteras
+	Cálculo de vizinhos a partir de edges
+
+mfMeshTriSurface:
+	adição desta classe.
+	Permitindo adição de células triangulares
+	Cálculo de vizinhos a partir de edges
+
+mfMeshHybridSurface:
+	adição desta classe.
+	Permitindo adição de malhas mistas
+	Cálculo de vizinhos a partir de edges
+
+mfGeometric:
+	adição das funções int inTetrahedron(sCell *c, sVertex *p MF_DMUTEXVD);
+			   int inTetrahedron(sVertex *p1, sVertex *p2, sVertex *p3, sVertex *p4, sVertex *p);
+		- Estas funções servem para determinar se um ponto está dentro de um tetraedro.
+
+mfCell2D: 
+	Substituido por mfTriCell
+
+mfMeshSurface:
+	Substituido por mfMeshTriSurface:
+
+mfEdge: Adicionados em Surpefícies
+
+mfEdgesIterator: adição desta classe.
+
+mfVertexStarIteratorQuadSurf:
+	Adicionado para tratar Star Iterations de vértices em superfícies quadráticas.
+	Condicionado para tratar vizinhança por arestas.
+
+mfVertexStarIteratorSurface:
+	Renomeado para mfVertexStarIteratorTriSurf.
+	Condicionado para tratar vizinhança por arestas.
+
+mfCells:
+	Adição de função de obter num de vertices e arestas.
+	Para o caso de malhas híbridas foi adicionado uma função 
+
+mfReaders:
+	Alteração nos valores obtidos para se saber o número de vértices.
+
+mfWriters:
+	Adaptação na escrita dos arquivos de acordo com o número de vértices.

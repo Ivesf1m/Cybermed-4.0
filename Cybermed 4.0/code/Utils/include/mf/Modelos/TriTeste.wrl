@@ -1,0 +1,55 @@
+
+NavigationInfo {
+	headlight TRUE
+	visibilityLimit 0.0
+	type ["EXAMINE", "ANY"]
+	avatarSize [0.25, 1.75, 0.75]
+}
+
+Background {
+	groundColor 0.057 0.221 0.4
+	skyColor 0.057 0.221 0.4
+}
+
+DEF rsvd_Sphere Transform {
+	translation 0.0 0.0 0.0
+		children [
+		Shape {
+			appearance Appearance {
+				material DEF MA_Material Material {
+					diffuseColor 1.0 0.332 0.332
+					ambientIntensity 0.167
+					specularColor 0.401 0.401 0.401
+					emissiveColor  0.0 0.0 0.0
+					shininess 0.098
+					transparency 0.0
+				}
+			}
+			geometry IndexedFaceSet {
+				solid TRUE
+				coord DEF coord_rsvd_Sphere Coordinate {
+					point [
+						-1 1 0,
+						-1 -1 0,
+						0 0 0,
+						1 -1 0,
+						1 1 0,
+						-0.5 -1.5 0,
+						0.5 -1.5 0,
+						-0.5 1.5 0,
+						0.5 1.5 0
+
+					]
+				}
+				coordIndex [
+					0 1 2 -1,
+					2 3 4 -1,
+					2 5 6 -1,
+					0 2 7 -1,
+					2 4 8 -1
+				]
+			}
+		}
+	]
+}
+

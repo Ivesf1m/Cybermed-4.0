@@ -1,0 +1,341 @@
+\hypertarget{classmf_1_1mfTetraCell}{
+\section{mf::mfTetraCell$<$ \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfTetraCell}\index{mf::mfTetraCell@{mf::mfTetraCell}}
+}
+Inheritance diagram for mf::mfTetraCell$<$ \_\-Traits $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmf_1_1mfTetraCell}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \_\-Traits::ids \hyperlink{classmf_1_1mfTetraCell_a1fe27f9bfd856ec3464b2b671ceaf558}{ids}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfTetraCell_a2e18ff7f38ded3a98cb44a44dc955fd5}{mfTetraCell} ()
+\item 
+virtual \hyperlink{classmf_1_1mfTetraCell_ae1a1b462e99342bf35614f1c09e1c630}{$\sim$mfTetraCell} ()
+\item 
+\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} \hyperlink{classmf_1_1mfTetraCell_a3b34d618f13b889fd1dfa008bdd79541}{getEdgeId} (int index MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} \hyperlink{classmf_1_1mfTetraCell_a946fd7394f718ef614076d3a15314b07}{getMateId} (int index MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfTetraCell_af6231dd16c5fb6e20aebd9f9127cd138}{setEdgeId} (int index, \hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} edge MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfTetraCell_acbe15a78f605cfbbc8f62acc3cf4bc0a}{setMateId} (int index, \hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} cell MF\_\-DMUTEXVD)
+\item 
+int \hyperlink{classmf_1_1mfTetraCell_a0a4f78f89482e6a45cbe2556cf8fa496}{getRightFaceIndex} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} index1, \hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} index2)
+\item 
+int \hyperlink{classmf_1_1mfTetraCell_a2b8f436018c47313fbd98d6ef63e8d3d}{getLeftFaceIndex} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} index1, \hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} index2)
+\item 
+void \hyperlink{classmf_1_1mfTetraCell_a9e553dc8c297b53756f44a9782facf5c}{clearMates} (MF\_\-DMUTEXD)
+\item 
+int \hyperlink{classmf_1_1mfTetraCell_a6fb6c0adb551ec4bbefe01c4e71ec443}{getMateIndex} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} cell MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} \hyperlink{classmf_1_1mfTetraCell_a0e5f9859616dfa35c3409fa5649c195c}{getMateVertexId} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} vertex MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} \hyperlink{classmf_1_1mfTetraCell_aad9f514199dea3408d6a14d0bb1f9f97}{getVertexMateId} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} cell MF\_\-DMUTEXVD)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classmf_1_1mfTetraCell_a6934653e054673d25dbb1bd8bddbc453}{getDimension} ()
+\item 
+static int \hyperlink{classmf_1_1mfTetraCell_a6a49b05e337c5aef4647acef176a8bf7}{getNumberVerticesInCell} ()
+\item 
+static int \hyperlink{classmf_1_1mfTetraCell_a49b7f454b739781a34fb4fa7152b66ac}{getNumberEdgesInCell} ()
+\item 
+static int \hyperlink{classmf_1_1mfTetraCell_ab0d119e5dd9b50ceaff310f34358a6de}{getNumberFacesInCell} ()
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$class \_\-Traits$>$ class mf::mfTetraCell$<$ \_\-Traits $>$}
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmf_1_1mfTetraCell_a1fe27f9bfd856ec3464b2b671ceaf558}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!ids@{ids}}
+\index{ids@{ids}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ typedef \_\-Traits ::{\bf ids} {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::{\bf ids}}}
+\label{classmf_1_1mfTetraCell_a1fe27f9bfd856ec3464b2b671ceaf558}
+Id typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_a9e32102899fb1e6b5e95b08a6c71063f}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfTetraCell_a2e18ff7f38ded3a98cb44a44dc955fd5}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!mfTetraCell@{mfTetraCell}}
+\index{mfTetraCell@{mfTetraCell}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{mfTetraCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::{\bf mfTetraCell} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a2e18ff7f38ded3a98cb44a44dc955fd5}
+Constructor \hypertarget{classmf_1_1mfTetraCell_ae1a1b462e99342bf35614f1c09e1c630}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!$\sim$mfTetraCell@{$\sim$mfTetraCell}}
+\index{$\sim$mfTetraCell@{$\sim$mfTetraCell}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{$\sim$mfTetraCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::$\sim${\bf mfTetraCell} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classmf_1_1mfTetraCell_ae1a1b462e99342bf35614f1c09e1c630}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfTetraCell_a9e553dc8c297b53756f44a9782facf5c}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!clearMates@{clearMates}}
+\index{clearMates@{clearMates}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{clearMates}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::clearMates (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a9e553dc8c297b53756f44a9782facf5c}
+Reset the mate cells ids
+
+Define -\/1 for all positions 
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_ac74f86234370beac5f821333ad1ceb4e}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_a6934653e054673d25dbb1bd8bddbc453}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getDimension@{getDimension}}
+\index{getDimension@{getDimension}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getDimension}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ static int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getDimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classmf_1_1mfTetraCell_a6934653e054673d25dbb1bd8bddbc453}
+Return the dimension of this cell 
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_adca6e1707e9d8487c22b3cd0117791a0}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_a3b34d618f13b889fd1dfa008bdd79541}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getEdgeId@{getEdgeId}}
+\index{getEdgeId@{getEdgeId}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getEdgeId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getEdgeId (
+\begin{DoxyParamCaption}
+\item[{int index}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a3b34d618f13b889fd1dfa008bdd79541}
+Return the edge id of the specified index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index,:} & position of edge \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfTetraCell_a2b8f436018c47313fbd98d6ef63e8d3d}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getLeftFaceIndex@{getLeftFaceIndex}}
+\index{getLeftFaceIndex@{getLeftFaceIndex}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getLeftFaceIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getLeftFaceIndex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{index1, }
+\item[{{\bf ids}}]{index2}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a2b8f436018c47313fbd98d6ef63e8d3d}
+Returns face index to the left of the edge defined by its 2 vertices
+
+
+\begin{DoxyParams}{Parameters}
+{\em index1,:} & Index of the first vertex of the edge \\
+\hline
+{\em index2,:} & Index of the second vertex of the edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of the face 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfTetraCell_a946fd7394f718ef614076d3a15314b07}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getMateId@{getMateId}}
+\index{getMateId@{getMateId}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getMateId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getMateId (
+\begin{DoxyParamCaption}
+\item[{int index}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a946fd7394f718ef614076d3a15314b07}
+Return the mate cell id of the specified index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index,:} & position of mate cell \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_a2c5d5cc9f5692d2802f86750c6e9c13f}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_a6fb6c0adb551ec4bbefe01c4e71ec443}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getMateIndex@{getMateIndex}}
+\index{getMateIndex@{getMateIndex}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getMateIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getMateIndex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} cell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a6fb6c0adb551ec4bbefe01c4e71ec443}
+Return the position of the opposite vertex id of the specified mate cell id Return the position of the specified mate cell id
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell,:} & the mate cell id \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_ae41581511f86555eaa0ebfb5581f55ea}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_a0e5f9859616dfa35c3409fa5649c195c}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getMateVertexId@{getMateVertexId}}
+\index{getMateVertexId@{getMateVertexId}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getMateVertexId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf ids} {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getMateVertexId (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} vertex}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a0e5f9859616dfa35c3409fa5649c195c}
+Return the opposite cell id of the specified vertex id
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell,:} & the vertex id \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_a9c977b126d6f1dc12848c303be0c36b0}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_a49b7f454b739781a34fb4fa7152b66ac}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getNumberEdgesInCell@{getNumberEdgesInCell}}
+\index{getNumberEdgesInCell@{getNumberEdgesInCell}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getNumberEdgesInCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ static int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getNumberEdgesInCell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classmf_1_1mfTetraCell_a49b7f454b739781a34fb4fa7152b66ac}
+Return the number of edges of this cell 
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_a16cc93bf1fa21c95014d000c9750e4a0}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_ab0d119e5dd9b50ceaff310f34358a6de}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getNumberFacesInCell@{getNumberFacesInCell}}
+\index{getNumberFacesInCell@{getNumberFacesInCell}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getNumberFacesInCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ static int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getNumberFacesInCell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classmf_1_1mfTetraCell_ab0d119e5dd9b50ceaff310f34358a6de}
+Return the number of faces of this cell \hypertarget{classmf_1_1mfTetraCell_a6a49b05e337c5aef4647acef176a8bf7}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getNumberVerticesInCell@{getNumberVerticesInCell}}
+\index{getNumberVerticesInCell@{getNumberVerticesInCell}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getNumberVerticesInCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ static int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getNumberVerticesInCell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classmf_1_1mfTetraCell_a6a49b05e337c5aef4647acef176a8bf7}
+Return the number of vertices of this cell 
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_ae5031384bc660f1a804ab6603b8c1a19}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_a0a4f78f89482e6a45cbe2556cf8fa496}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getRightFaceIndex@{getRightFaceIndex}}
+\index{getRightFaceIndex@{getRightFaceIndex}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getRightFaceIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ int {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getRightFaceIndex (
+\begin{DoxyParamCaption}
+\item[{{\bf ids}}]{index1, }
+\item[{{\bf ids}}]{index2}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_a0a4f78f89482e6a45cbe2556cf8fa496}
+Returns face index to the right of the edge defined by its 2 vertices
+
+
+\begin{DoxyParams}{Parameters}
+{\em index1,:} & Index of the first vertex of the edge \\
+\hline
+{\em index2,:} & Index of the second vertex of the edge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of the face 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfTetraCell_aad9f514199dea3408d6a14d0bb1f9f97}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!getVertexMateId@{getVertexMateId}}
+\index{getVertexMateId@{getVertexMateId}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{getVertexMateId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ IDS {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::getVertexMateId (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} cell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_aad9f514199dea3408d6a14d0bb1f9f97}
+Return the opposite vertex id of the specified mate cell id
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell,:} & the mate cell id \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_a120ea26866f9a71cced4b3256cfd63df}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfTetraCell_af6231dd16c5fb6e20aebd9f9127cd138}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!setEdgeId@{setEdgeId}}
+\index{setEdgeId@{setEdgeId}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{setEdgeId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::setEdgeId (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf ids} edge}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_af6231dd16c5fb6e20aebd9f9127cd138}
+Define the edge id of the specified index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index,:} & position of edge \\
+\hline
+{\em vertex,:} & the edge id \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfTetraCell_acbe15a78f605cfbbc8f62acc3cf4bc0a}{
+\index{mf::mfTetraCell@{mf::mfTetraCell}!setMateId@{setMateId}}
+\index{setMateId@{setMateId}!mf::mfTetraCell@{mf::mfTetraCell}}
+\subsubsection[{setMateId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ void {\bf mf::mfTetraCell}$<$ \_\-Traits $>$::setMateId (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf ids} cell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfTetraCell_acbe15a78f605cfbbc8f62acc3cf4bc0a}
+Define the mate cell id of the specified index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index,:} & position of mate cell \\
+\hline
+{\em cell,:} & the mate cell id \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classmf_1_1mfCell_a96fe10c334f74928d220d46c3761f024}{mf::mfCell$<$ 4, \_\-Traits $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mfTetraCell_8h}{mfTetraCell.h}\end{DoxyCompactItemize}

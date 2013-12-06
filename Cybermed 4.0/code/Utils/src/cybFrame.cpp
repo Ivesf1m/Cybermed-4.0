@@ -1,0 +1,265 @@
+#include "cybFrame.h"
+
+#define FOR(n) for(int i = 0; i < n; ++i)
+#define NORMA(n)   sqrt(n[0]*n[0] + n[1]*n[1] + n[2]*n[2])
+
+CybFrame::CybFrame()
+{
+    FOR(3) origin[i] = up[i] = forward[i] = 0.0f;
+    up[1] = 1.0f;
+    forward[2] = -1.0f;
+}
+
+void CybFrame::getCameraMatrix(mat4 cm, bool rotOnly)
+{
+    vec3 x, z;
+    x[0] = up[1] * forward[2] - up[2] * forward[1];
+    x[1] = up[2] * forward[0] - up[0] * forward[2];
+    x[2] = up[0] * forward[1] - up[1] * forward[0];
+    FOR(3) z[i] = -forward[i];
+    cm[0] = x[0]; cm[4] = x[1]; cm[8] = x[2];
+    cm[1] = up[0]; cm[5] = up[1]; cm[9] = up[2];
+    cm[2] = z[0]; cm[6] = z[1]; cm[10] = z[2];
+    cm[3] = cm[7] = cm[11] = cm[12] = cm[13] = cm[14] = 0.0f;
+    cm[15] = 1.0f;
+    if(rotOnly) return;
+    mat4 trans, aux;
+    CybLineMatrix::createTranslationMatrix4D(trans, -origin[0], -origin[1], -origin[2]);
+    CybLineMatrix::multiplyMatrices4D(cm, trans, aux);
+    memcpy(cm, aux, sizeof(float) * 16);
+}
+
+void CybFrame::getForward(vec3 f)
+{
+    FOR(3) f[i] = forward[i];
+}
+
+void CybFrame::getFrameMatrix(mat4 m, bool rotOnly)
+{
+    vec3 x;
+    x[0] = up[1] * forward[2] - up[2] * forward[1];
+    x[1] = up[2] * forward[0] - up[0] * forward[2];
+    x[2] = up[0] * forward[1] - up[1] * forward[0];
+    CybLineMatrix::setColumn4D(m, x, 0);
+    m[3] = 0.0f;
+    CybLineMatrix::setColumn4D(m, up, 1);
+    m[7] = 0.0f;
+    CybLineMatrix::setColumn4D(m, forward, 2);
+    m[11] = 0.0f;
+    if(rotOnly) FOR(3) m[i + 12] = 0.0f;
+    else CybLineMatrix::setColumn4D(m, origin, 3);
+    m[15] = 1.0f;
+}
+
+void CybFrame::getOrigin(vec3 o)
+{
+    FOR(3) o[i] = origin[i];
+}
+
+void CybFrame::getUp(vec3 u)
+{
+    FOR(3) u[i] = up[i];
+}
+
+float CybFrame::getOriginX()
+{
+    return origin[0];
+}
+
+float CybFrame::getOriginY()
+{
+    return origin[1];
+}
+
+float CybFrame::getOriginZ()
+{
+    return origin[2];
+}
+
+void CybFrame::getXAxis(vec3 x)
+{
+    x[0] = up[1] * forward[2] - up[2] * forward[1];
+    x[1] = up[2] * forward[0] - up[0] * forward[2];
+    x[2] = up[0] * forward[1] - up[1] * forward[0];
+}
+
+void CybFrame::getYAxis(vec3 y)
+{
+    FOR(3) y[i] = up[i];
+}
+
+void CybFrame::getZAxis(vec3 z)
+{
+    FOR(3) z[i] = forward[i];
+}
+
+void CybFrame::localRotation(float angle, float x, float y, float z)
+{
+    vec3 world, local;
+    local[0] = x; local[1] = y; local[2] = z;
+    localToWorld(local, world, true);
+    worldRotation(angle, world[0], world[1], world[2]);
+}
+
+void CybFrame::localToWorld(const vec3 local, vec3 world, bool rotOnly)
+{
+    mat4 rotMat;
+    getFrameMatrix(rotMat, true);
+    FOR(3) world[i] = rotMat[i] * local[0] + rotMat[i+4] * local[1] + rotMat[i+8] * local[2];
+    if(!rotOnly) FOR(3) world[i] += origin[i];
+}
+
+void CybFrame::localTranslation(float x, float y, float z)
+{
+    moveRight(x);
+    moveUp(y);
+    moveForward(z);
+}
+
+void CybFrame::moveForward(float delta)
+{
+    FOR(3) origin[i] += forward[i] * delta;
+}
+
+void CybFrame::moveRight(float delta)
+{
+    vec3 x;
+    x[0] = up[1] * forward[2] - up[2] * forward[1];
+    x[1] = up[2] * forward[0] - up[0] * forward[2];
+    x[2] = up[0] * forward[1] - up[1] * forward[0];
+    FOR(3) origin[i] += x[i] * delta;
+}
+
+void CybFrame::moveUp(float delta)
+{
+    FOR(3) origin[i] += up[i] * delta;
+}
+
+void CybFrame::normalizeBasis()
+{
+    vec3 x;
+    x[0] = up[1] * forward[2] - up[2] * forward[1];
+    x[1] = up[2] * forward[0] - up[0] * forward[2];
+    x[2] = up[0] * forward[1] - up[1] * forward[0];
+
+    forward[0] = x[1] * up[2] - x[2] * up[1];
+    forward[1] = x[2] * up[0] - x[0] * up[2];
+    forward[2] = x[0] * up[1] - x[1] * up[0];
+    float normUp = NORMA(up);
+    float normFor = NORMA(forward);
+    FOR(3){ up[i] /= normUp; forward[i] /= normFor; }
+}
+
+void CybFrame::rotateLocalX(float angle)
+{
+    mat3 rotMat;
+    vec3 x, rotVec;
+    x[0] = up[1] * forward[2] - up[2] * forward[1];
+    x[1] = up[2] * forward[0] - up[0] * forward[2];
+    x[2] = up[0] * forward[1] - up[1] * forward[0];
+    CybLineMatrix::createRotationMatrix3D(rotMat, angle, x[0], x[1], x[2]);
+    CybLineMatrix::rotate(rotMat, up, rotVec);
+    FOR(3) up[i] = rotVec[i];
+    CybLineMatrix::rotate(rotMat, forward, rotVec);
+    FOR(3) forward[i] = rotVec[i];
+}
+
+void CybFrame::rotateLocalY(float angle)
+{
+    mat4 rotMat;
+    vec3 newVec;
+    CybLineMatrix::createRotationMatrix4D(rotMat, angle, up[0], up[1], up[2]);
+    FOR(3) newVec[i] = rotMat[i] * forward[0] + rotMat[i+4] * forward[1] + rotMat[i+8] * forward[2];
+    FOR(3) forward[i] = newVec[i];
+}
+
+void CybFrame::rotateLocalZ(float angle)
+{
+    mat4 rotMat;
+    vec3 newVec;
+    CybLineMatrix::createRotationMatrix4D(rotMat, angle, forward[0], forward[1], forward[2]);
+    FOR(3) newVec[i] = rotMat[i] * up[0] + rotMat[i+4] * up[1] + rotMat[i+8] * up[2];
+    FOR(3) up[i] = newVec[i];
+}
+
+void CybFrame::rotateVector(const vec3 pi, vec3 pf)
+{
+    mat4 m;
+    getFrameMatrix(m, false);
+    FOR(3) pf[i] = m[i] * pi[0] + m[i+4] * pi[1] + m[i+8] * pi[2];
+}
+
+void CybFrame::setForward(const vec3 point)
+{
+    FOR(3) forward[i] = point[i];
+}
+
+void CybFrame::setForward(float x, float y, float z)
+{
+    forward[0] = x;
+    forward[1] = y;
+    forward[2] = z;
+}
+
+void CybFrame::setOrigin(const vec3 point)
+{
+    FOR(3) origin[i] = point[i];
+}
+
+void CybFrame::setOrigin(float x, float y, float z)
+{
+    origin[0] = x;
+    origin[1] = y;
+    origin[2] = z;
+}
+
+void CybFrame::setUp(const vec3 point)
+{
+    FOR(3) up[i] = point[i];
+}
+
+void CybFrame::setUp(float x, float y, float z)
+{
+    up[0] = x;
+    up[1] = y;
+    up[2] = z;
+}
+
+void CybFrame::transformPoint(const vec3 pi, vec3 pf)
+{
+    mat4 m;
+    getFrameMatrix(m, false);
+    FOR(3) pf[i] = m[i] * pi[0] + m[i+4] * pi[1] + m[i+8] * pi[2] + m[i+12];
+}
+
+void CybFrame::worldRotation(float angle, float x, float y, float z)
+{
+    mat4 rotMat;
+    vec3 newVec;
+    CybLineMatrix::createRotationMatrix4D(rotMat, angle, x, y, z);
+    FOR(3) newVec[i] = rotMat[i] * up[0] + rotMat[i+4] * up[1] + rotMat[i+8] * up[2];
+    FOR(3) up[i] = newVec[i];
+    FOR(3) newVec[i] = rotMat[i] * forward[0] + rotMat[i+4] * forward[1] + rotMat[i+8] * forward[2];
+    FOR(3) forward[i] = newVec[i];
+}
+
+void CybFrame::worldToLocal(const vec3 world, vec3 local)
+{
+    vec3 newWorld;
+    FOR(3) newWorld[i] = world[i] - origin[i];
+    mat4 rotMat, invMat;
+    getFrameMatrix(rotMat, true);
+    CybLineMatrix::invertMatrix4D(rotMat, invMat);
+    FOR(3) local[i] = invMat[i] * newWorld[0] + invMat[i+4] * newWorld[1] + invMat[i+8] * newWorld[2];
+}
+
+void CybFrame::worldTranslation(float x, float y, float z)
+{
+    origin[0] += x;
+    origin[1] += y;
+    origin[2] += z;
+}
+
+#undef FOR
+#undef NORMA
+

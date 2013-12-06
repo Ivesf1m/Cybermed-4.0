@@ -1,0 +1,88 @@
+\hypertarget{classmf_1_1mfWriter}{
+\section{mf::mfWriter$<$ \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfWriter}\index{mf::mfWriter@{mf::mfWriter}}
+}
+
+
+Modelo dos escritores de arquivos.  
+
+
+
+
+{\ttfamily \#include $<$mfWriter.h$>$}
+
+Inheritance diagram for mf::mfWriter$<$ \_\-Traits $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.407035cm]{classmf_1_1mfWriter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmf_1_1mfWriter_ab2e5e3009b068b86819bdb50a284809b}{
+typedef \_\-Traits::sMesh {\bfseries sMesh}}
+\label{classmf_1_1mfWriter_ab2e5e3009b068b86819bdb50a284809b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfWriter_a5c3d89035c391fcdb02e72efd5f6fb36}{mfWriter} ()
+\item 
+virtual \hyperlink{classmf_1_1mfWriter_acee9f2b54a145e68d165ab9fdb110865}{$\sim$mfWriter} ()
+\item 
+virtual bool \hyperlink{classmf_1_1mfWriter_a85d6c59bdb8fec69222e4157c299256c}{write} (sMesh $\ast$malha, const char $\ast$filename)=0
+\begin{DoxyCompactList}\small\item\em Executa a escrita de um arquivo (salva uma malha) \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \_\-Traits$>$ class mf::mfWriter$<$ \_\-Traits $>$}
+
+Modelo dos escritores de arquivos. Esta classe eh abstrata, devendo servir apenas de molde para novas implementacoes de escritores de arquivos. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfWriter_a5c3d89035c391fcdb02e72efd5f6fb36}{
+\index{mf::mfWriter@{mf::mfWriter}!mfWriter@{mfWriter}}
+\index{mfWriter@{mfWriter}!mf::mfWriter@{mf::mfWriter}}
+\subsubsection[{mfWriter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfWriter}$<$ \_\-Traits $>$::{\bf mfWriter} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfWriter_a5c3d89035c391fcdb02e72efd5f6fb36}
+Construtor \hypertarget{classmf_1_1mfWriter_acee9f2b54a145e68d165ab9fdb110865}{
+\index{mf::mfWriter@{mf::mfWriter}!$\sim$mfWriter@{$\sim$mfWriter}}
+\index{$\sim$mfWriter@{$\sim$mfWriter}!mf::mfWriter@{mf::mfWriter}}
+\subsubsection[{$\sim$mfWriter}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfWriter}$<$ \_\-Traits $>$::$\sim${\bf mfWriter} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classmf_1_1mfWriter_acee9f2b54a145e68d165ab9fdb110865}
+Destrutor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfWriter_a85d6c59bdb8fec69222e4157c299256c}{
+\index{mf::mfWriter@{mf::mfWriter}!write@{write}}
+\index{write@{write}!mf::mfWriter@{mf::mfWriter}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ virtual bool {\bf mf::mfWriter}$<$ \_\-Traits $>$::write (
+\begin{DoxyParamCaption}
+\item[{sMesh $\ast$}]{malha, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classmf_1_1mfWriter_a85d6c59bdb8fec69222e4157c299256c}
+
+
+Executa a escrita de um arquivo (salva uma malha) 
+
+Paraetros de entrada: malha : endereco de memoria da malha a ser salva. filename : nome do arquivo da malha. (destino) 
+
+Implemented in \hyperlink{classmf_1_1mfMfWriter_a2fc75ae58c2e75f24924c812aec7bc8a}{mf::mfMfWriter$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfOffWriter_ad3fe52bf8870c31c1b9f71431a56af8a}{mf::mfOffWriter$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfPolyDataWriter_a5621f62f1a2811fa1b24da447cf3c5ea}{mf::mfPolyDataWriter$<$ \_\-Traits $>$}, and \hyperlink{classmf_1_1mfVtkWriter_a5385afe137ace0a1c5dafed8e74c4c35}{mf::mfVtkWriter$<$ \_\-Traits $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+mfWriter.h\end{DoxyCompactItemize}

@@ -1,0 +1,240 @@
+\hypertarget{classmf_1_1mfSingularVertex}{
+\section{mf::mfSingularVertex$<$ size, \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfSingularVertex}\index{mf::mfSingularVertex@{mf::mfSingularVertex}}
+}
+
+
+{\ttfamily \#include $<$mfSingularVertex.h$>$}
+
+Inheritance diagram for mf::mfSingularVertex$<$ size, \_\-Traits $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmf_1_1mfSingularVertex}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \_\-Traits::ids \hyperlink{classmf_1_1mfSingularVertex_ad951601375961980e2ad033de57e14a1}{ids}
+\item 
+typedef \_\-Traits::space \hyperlink{classmf_1_1mfSingularVertex_a96d4909dd62a8e8889eda76d0148db2a}{space}
+\item 
+typedef \hyperlink{classmf_1_1mfSing}{mfSing}$<$ \_\-Traits $>$ \hyperlink{classmf_1_1mfSingularVertex_ac992cd55c8554406174a3a1449af209b}{sSing}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfSingularVertex_a44c61e349c686e1ffeaec3f6bbe5010c}{mfSingularVertex} ()
+\item 
+\hyperlink{classmf_1_1mfSingularVertex_a8f9efd5ee656e83a0f50c9833fc2af9f}{$\sim$mfSingularVertex} ()
+\item 
+bool \hyperlink{classmf_1_1mfSingularVertex_a2a85f3a4a1b98b63ca9504ef1ad4da7e}{isSingular} (MF\_\-DMUTEXD)
+\item 
+int \hyperlink{classmf_1_1mfSingularVertex_a5256ee7412e6d5173390fc7409d74fc5}{getNumberOfSings} (MF\_\-DMUTEXD)
+\item 
+\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} \hyperlink{classmf_1_1mfSingularVertex_a3614e72d2adb6efef5345ef0edf30c47}{getSingCell} (int pos=0 MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfSingularVertex_a943c961054aaf8e3512254ea8312640a}{setSingCell} (int pos, \hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} cell MF\_\-DMUTEXVD)
+\item 
+int \hyperlink{classmf_1_1mfSingularVertex_a8100c3e3601205ca8996057cc0732b1a}{addSing} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} cell MF\_\-DMUTEXVD)
+\item 
+bool \hyperlink{classmf_1_1mfSingularVertex_a2e7093fbc051f93cf99c092ff8dcfa70}{delSing} (int pos MF\_\-DMUTEXVD)
+\item 
+void \hyperlink{classmf_1_1mfSingularVertex_a86f55d574e4415c530d7945018802da3}{clearSings} (MF\_\-DMUTEXD)
+\item 
+int \hyperlink{classmf_1_1mfSingularVertex_a834794974d9a2a6315830da23abf3378}{inSings} (\hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{ids} cell MF\_\-DMUTEXVD)
+\item 
+\hyperlink{classmf_1_1mfSing}{sSing} $\ast$ \hyperlink{classmf_1_1mfSingularVertex_adc2be2ffb1b40b539ce0bbff34aa1a99}{getSing} (MF\_\-DMUTEXD)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int size, class \_\-Traits$>$ class mf::mfSingularVertex$<$ size, \_\-Traits $>$}
+
+Base class of singular vertex
+
+\_\-Traits must have typenames: ids, space, sSing
+
+/$\ast$$\ast$ 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classmf_1_1mfSingularVertex_ad951601375961980e2ad033de57e14a1}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!ids@{ids}}
+\index{ids@{ids}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{ids}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ typedef \_\-Traits::ids {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::{\bf ids}}}
+\label{classmf_1_1mfSingularVertex_ad951601375961980e2ad033de57e14a1}
+Id typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfBase_a3b23f16ddf59da0a91ab12cf57c1f111}{mf::mfBase$<$ \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfSingularVertex_a96d4909dd62a8e8889eda76d0148db2a}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!space@{space}}
+\index{space@{space}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{space}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ typedef \_\-Traits::space {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::{\bf space}}}
+\label{classmf_1_1mfSingularVertex_a96d4909dd62a8e8889eda76d0148db2a}
+Space typename definition 
+
+Reimplemented from \hyperlink{classmf_1_1mfVertex_a9710b0b7ac7bbb276e1e97d541cbfc93}{mf::mfVertex$<$ size, \_\-Traits $>$}.
+
+
+
+Reimplemented in \hyperlink{classmf_1_1mfVertex2D_a0730a219bea43b0b049cae2b4c72527b}{mf::mfVertex2D$<$ \_\-Traits $>$}, and \hyperlink{classmf_1_1mfVertex3D_a16aa06a4ca21fae048fa56b7a40ac088}{mf::mfVertex3D$<$ \_\-Traits $>$}.
+
+\hypertarget{classmf_1_1mfSingularVertex_ac992cd55c8554406174a3a1449af209b}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!sSing@{sSing}}
+\index{sSing@{sSing}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{sSing}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ typedef {\bf mfSing}$<$\_\-Traits$>$ {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::{\bf sSing}}}
+\label{classmf_1_1mfSingularVertex_ac992cd55c8554406174a3a1449af209b}
+Singular typename definition 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfSingularVertex_a44c61e349c686e1ffeaec3f6bbe5010c}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!mfSingularVertex@{mfSingularVertex}}
+\index{mfSingularVertex@{mfSingularVertex}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{mfSingularVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::{\bf mfSingularVertex} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a44c61e349c686e1ffeaec3f6bbe5010c}
+Constructor \hypertarget{classmf_1_1mfSingularVertex_a8f9efd5ee656e83a0f50c9833fc2af9f}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!$\sim$mfSingularVertex@{$\sim$mfSingularVertex}}
+\index{$\sim$mfSingularVertex@{$\sim$mfSingularVertex}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{$\sim$mfSingularVertex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::$\sim${\bf mfSingularVertex} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a8f9efd5ee656e83a0f50c9833fc2af9f}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfSingularVertex_a8100c3e3601205ca8996057cc0732b1a}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!addSing@{addSing}}
+\index{addSing@{addSing}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{addSing}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ int {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::addSing (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} cell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a8100c3e3601205ca8996057cc0732b1a}
+Add a singular component
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell,:} & cell to be add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of added singular component 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfSingularVertex_a86f55d574e4415c530d7945018802da3}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!clearSings@{clearSings}}
+\index{clearSings@{clearSings}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{clearSings}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ void {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::clearSings (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a86f55d574e4415c530d7945018802da3}
+Delete all singular components \hypertarget{classmf_1_1mfSingularVertex_a2e7093fbc051f93cf99c092ff8dcfa70}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!delSing@{delSing}}
+\index{delSing@{delSing}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{delSing}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ bool {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::delSing (
+\begin{DoxyParamCaption}
+\item[{int pos}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a2e7093fbc051f93cf99c092ff8dcfa70}
+Delete a singular component
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos,:} & index of singular component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfSingularVertex_a5256ee7412e6d5173390fc7409d74fc5}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!getNumberOfSings@{getNumberOfSings}}
+\index{getNumberOfSings@{getNumberOfSings}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{getNumberOfSings}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ int {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::getNumberOfSings (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a5256ee7412e6d5173390fc7409d74fc5}
+Return the number of sSing (number of singular components) \hypertarget{classmf_1_1mfSingularVertex_adc2be2ffb1b40b539ce0bbff34aa1a99}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!getSing@{getSing}}
+\index{getSing@{getSing}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{getSing}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ {\bf sSing}$\ast$ {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::getSing (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_adc2be2ffb1b40b539ce0bbff34aa1a99}
+Return the first singular component \hypertarget{classmf_1_1mfSingularVertex_a3614e72d2adb6efef5345ef0edf30c47}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!getSingCell@{getSingCell}}
+\index{getSingCell@{getSingCell}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{getSingCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ IDS {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::getSingCell (
+\begin{DoxyParamCaption}
+\item[{int pos}]{MF\_\-DMUTEXV = {\ttfamily 0~MF\_\-DMUTEXVD}}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a3614e72d2adb6efef5345ef0edf30c47}
+Return the first cell of each singular component
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos,:} & index of singular component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+one cell of 'pos' singular component 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfSingularVertex_a834794974d9a2a6315830da23abf3378}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!inSings@{inSings}}
+\index{inSings@{inSings}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{inSings}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ int {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::inSings (
+\begin{DoxyParamCaption}
+\item[{{\bf ids} cell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a834794974d9a2a6315830da23abf3378}
+Return the position of the specified cell in list of singular components \hypertarget{classmf_1_1mfSingularVertex_a2a85f3a4a1b98b63ca9504ef1ad4da7e}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!isSingular@{isSingular}}
+\index{isSingular@{isSingular}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{isSingular}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits$>$ bool {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::isSingular (
+\begin{DoxyParamCaption}
+\item[{MF\_\-DMUTEXD}]{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a2a85f3a4a1b98b63ca9504ef1ad4da7e}
+Return true if this vertex is singular \hypertarget{classmf_1_1mfSingularVertex_a943c961054aaf8e3512254ea8312640a}{
+\index{mf::mfSingularVertex@{mf::mfSingularVertex}!setSingCell@{setSingCell}}
+\index{setSingCell@{setSingCell}!mf::mfSingularVertex@{mf::mfSingularVertex}}
+\subsubsection[{setSingCell}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int size, class \_\-Traits $>$ bool {\bf mf::mfSingularVertex}$<$ size, \_\-Traits $>$::setSingCell (
+\begin{DoxyParamCaption}
+\item[{int}]{pos, }
+\item[{{\bf ids} cell}]{MF\_\-DMUTEXVD}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfSingularVertex_a943c961054aaf8e3512254ea8312640a}
+Set a singular component
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos,:} & index of singular component \\
+\hline
+{\em cell,:} & cell to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if 'pos' exist
+\end{DoxyReturn}
+For add a singular component use addSing 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mfSingularVertex_8h}{mfSingularVertex.h}\end{DoxyCompactItemize}

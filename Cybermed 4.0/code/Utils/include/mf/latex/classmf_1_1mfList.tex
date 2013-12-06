@@ -1,0 +1,257 @@
+\hypertarget{classmf_1_1mfList}{
+\section{mf::mfList$<$ T $>$ Class Template Reference}
+\label{classmf_1_1mfList}\index{mf::mfList@{mf::mfList}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfList_a9dd33ef36055bea004031002d4a4f026}{mfList} ()
+\item 
+\hyperlink{classmf_1_1mfList_ad4d3eec9f511b150164eec42459ca134}{$\sim$mfList} ()
+\item 
+T \hyperlink{classmf_1_1mfList_a847bb77a327152d37cedb7cc67bb0a15}{pos} (int pos)
+\item 
+T \hyperlink{classmf_1_1mfList_aa4aa1f0cadb360d2a30b020c0f033d6b}{first} ()
+\item 
+T \hyperlink{classmf_1_1mfList_a9cfc645e054d48f9b0f59e071d7b24c2}{last} ()
+\item 
+int \hyperlink{classmf_1_1mfList_a46420521581b1d1786feec1d220d13a0}{size} ()
+\item 
+void \hyperlink{classmf_1_1mfList_aa6109befcbdbfa250c92ac64f158356f}{insert} (T novo)
+\item 
+bool \hyperlink{classmf_1_1mfList_a06c516722437afbea46d194ee69f405c}{insertOnlyOne} (T novo)
+\item 
+void \hyperlink{classmf_1_1mfList_aa674ce8284228bf3840da51237b36490}{insertFirst} (T novo)
+\item 
+void \hyperlink{classmf_1_1mfList_a9e4631c431e66facd94f5118a057125a}{insert} (T novo, int pos)
+\item 
+bool \hyperlink{classmf_1_1mfList_ab8b24b126809bfdfad4dc9bff662de32}{erase} (int pos)
+\item 
+bool \hyperlink{classmf_1_1mfList_a99299b5d36f398ccb0becf383c7364ed}{inList} (T info)
+\item 
+int \hyperlink{classmf_1_1mfList_a1a43deefc120cb65083011dd6202a5d9}{search} (T info)
+\item 
+void \hyperlink{classmf_1_1mfList_aba45770f50fda9994f9a32aff96bc410}{clear} ()
+\item 
+bool \hyperlink{classmf_1_1mfList_ae12dd483320f7d90846e3f8af843244c}{empty} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmf_1_1mfList_a05d51ad01af004b129160206f8434ff9}{lsize}
+\item 
+\hyperlink{classmf_1_1mfListNode}{mfListNode}$<$ T $>$ $\ast$ \hyperlink{classmf_1_1mfList_a814cc8674a44ba839f7cbbcc6a4bb172}{lfirst}
+\item 
+\hyperlink{classmf_1_1mfListNode}{mfListNode}$<$ T $>$ $\ast$ \hyperlink{classmf_1_1mfList_a5c24c5c4cf0d4807f181cf9ae36dd028}{llast}
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$class T$>$ class mf::mfList$<$ T $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfList_a9dd33ef36055bea004031002d4a4f026}{
+\index{mf::mfList@{mf::mfList}!mfList@{mfList}}
+\index{mfList@{mfList}!mf::mfList@{mf::mfList}}
+\subsubsection[{mfList}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf mf::mfList}$<$ T $>$::{\bf mfList} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a9dd33ef36055bea004031002d4a4f026}
+Constructor \hypertarget{classmf_1_1mfList_ad4d3eec9f511b150164eec42459ca134}{
+\index{mf::mfList@{mf::mfList}!$\sim$mfList@{$\sim$mfList}}
+\index{$\sim$mfList@{$\sim$mfList}!mf::mfList@{mf::mfList}}
+\subsubsection[{$\sim$mfList}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ {\bf mf::mfList}$<$ T $>$::$\sim${\bf mfList} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_ad4d3eec9f511b150164eec42459ca134}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfList_aba45770f50fda9994f9a32aff96bc410}{
+\index{mf::mfList@{mf::mfList}!clear@{clear}}
+\index{clear@{clear}!mf::mfList@{mf::mfList}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ void {\bf mf::mfList}$<$ T $>$::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_aba45770f50fda9994f9a32aff96bc410}
+Delete all element of list \hypertarget{classmf_1_1mfList_ae12dd483320f7d90846e3f8af843244c}{
+\index{mf::mfList@{mf::mfList}!empty@{empty}}
+\index{empty@{empty}!mf::mfList@{mf::mfList}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf mf::mfList}$<$ T $>$::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_ae12dd483320f7d90846e3f8af843244c}
+Return true if list dont have any element \hypertarget{classmf_1_1mfList_ab8b24b126809bfdfad4dc9bff662de32}{
+\index{mf::mfList@{mf::mfList}!erase@{erase}}
+\index{erase@{erase}!mf::mfList@{mf::mfList}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ bool {\bf mf::mfList}$<$ T $>$::erase (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_ab8b24b126809bfdfad4dc9bff662de32}
+Delete a element
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos,:} & position of element \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfList_aa4aa1f0cadb360d2a30b020c0f033d6b}{
+\index{mf::mfList@{mf::mfList}!first@{first}}
+\index{first@{first}!mf::mfList@{mf::mfList}}
+\subsubsection[{first}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf mf::mfList}$<$ T $>$::first (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_aa4aa1f0cadb360d2a30b020c0f033d6b}
+Return the first element \hypertarget{classmf_1_1mfList_a99299b5d36f398ccb0becf383c7364ed}{
+\index{mf::mfList@{mf::mfList}!inList@{inList}}
+\index{inList@{inList}!mf::mfList@{mf::mfList}}
+\subsubsection[{inList}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf mf::mfList}$<$ T $>$::inList (
+\begin{DoxyParamCaption}
+\item[{T}]{info}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a99299b5d36f398ccb0becf383c7364ed}
+Return true if the element is inlist \hypertarget{classmf_1_1mfList_aa6109befcbdbfa250c92ac64f158356f}{
+\index{mf::mfList@{mf::mfList}!insert@{insert}}
+\index{insert@{insert}!mf::mfList@{mf::mfList}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf mf::mfList}$<$ T $>$::insert (
+\begin{DoxyParamCaption}
+\item[{T}]{novo}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_aa6109befcbdbfa250c92ac64f158356f}
+Insert a element in list (in last position)
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo,:} & element will be inserted \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfList_a9e4631c431e66facd94f5118a057125a}{
+\index{mf::mfList@{mf::mfList}!insert@{insert}}
+\index{insert@{insert}!mf::mfList@{mf::mfList}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf mf::mfList}$<$ T $>$::insert (
+\begin{DoxyParamCaption}
+\item[{T}]{novo, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a9e4631c431e66facd94f5118a057125a}
+Insert a element in the specified position of list
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo,:} & element \\
+\hline
+{\em pos,:} & position \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfList_aa674ce8284228bf3840da51237b36490}{
+\index{mf::mfList@{mf::mfList}!insertFirst@{insertFirst}}
+\index{insertFirst@{insertFirst}!mf::mfList@{mf::mfList}}
+\subsubsection[{insertFirst}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf mf::mfList}$<$ T $>$::insertFirst (
+\begin{DoxyParamCaption}
+\item[{T}]{novo}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_aa674ce8284228bf3840da51237b36490}
+Insert a element in first position of list
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo,:} & element \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfList_a06c516722437afbea46d194ee69f405c}{
+\index{mf::mfList@{mf::mfList}!insertOnlyOne@{insertOnlyOne}}
+\index{insertOnlyOne@{insertOnlyOne}!mf::mfList@{mf::mfList}}
+\subsubsection[{insertOnlyOne}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ bool {\bf mf::mfList}$<$ T $>$::insertOnlyOne (
+\begin{DoxyParamCaption}
+\item[{T}]{novo}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a06c516722437afbea46d194ee69f405c}
+Insert a element in list, only if this element isnt in list. (in last position)
+
+
+\begin{DoxyParams}{Parameters}
+{\em novo,:} & element \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfList_a9cfc645e054d48f9b0f59e071d7b24c2}{
+\index{mf::mfList@{mf::mfList}!last@{last}}
+\index{last@{last}!mf::mfList@{mf::mfList}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf mf::mfList}$<$ T $>$::last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a9cfc645e054d48f9b0f59e071d7b24c2}
+Return the last element (faster than pos(\hyperlink{classmf_1_1mfList_a46420521581b1d1786feec1d220d13a0}{size()} -\/ 1) ) \hypertarget{classmf_1_1mfList_a847bb77a327152d37cedb7cc67bb0a15}{
+\index{mf::mfList@{mf::mfList}!pos@{pos}}
+\index{pos@{pos}!mf::mfList@{mf::mfList}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ T {\bf mf::mfList}$<$ T $>$::pos (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a847bb77a327152d37cedb7cc67bb0a15}
+Return a element of the specified position
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos,:} & position of the element \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfList_a1a43deefc120cb65083011dd6202a5d9}{
+\index{mf::mfList@{mf::mfList}!search@{search}}
+\index{search@{search}!mf::mfList@{mf::mfList}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf mf::mfList}$<$ T $>$::search (
+\begin{DoxyParamCaption}
+\item[{T}]{info}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a1a43deefc120cb65083011dd6202a5d9}
+Return the position of a element, -\/1 if isnt in list \hypertarget{classmf_1_1mfList_a46420521581b1d1786feec1d220d13a0}{
+\index{mf::mfList@{mf::mfList}!size@{size}}
+\index{size@{size}!mf::mfList@{mf::mfList}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ int {\bf mf::mfList}$<$ T $>$::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfList_a46420521581b1d1786feec1d220d13a0}
+Return the number of elements in list 
+
+\subsection{Member Data Documentation}
+\hypertarget{classmf_1_1mfList_a814cc8674a44ba839f7cbbcc6a4bb172}{
+\index{mf::mfList@{mf::mfList}!lfirst@{lfirst}}
+\index{lfirst@{lfirst}!mf::mfList@{mf::mfList}}
+\subsubsection[{lfirst}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf mfListNode}$<$T$>$$\ast$ {\bf mf::mfList}$<$ T $>$::{\bf lfirst}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classmf_1_1mfList_a814cc8674a44ba839f7cbbcc6a4bb172}
+First node on list \hypertarget{classmf_1_1mfList_a5c24c5c4cf0d4807f181cf9ae36dd028}{
+\index{mf::mfList@{mf::mfList}!llast@{llast}}
+\index{llast@{llast}!mf::mfList@{mf::mfList}}
+\subsubsection[{llast}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf mfListNode}$<$T$>$$\ast$ {\bf mf::mfList}$<$ T $>$::{\bf llast}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classmf_1_1mfList_a5c24c5c4cf0d4807f181cf9ae36dd028}
+Last node on list \hypertarget{classmf_1_1mfList_a05d51ad01af004b129160206f8434ff9}{
+\index{mf::mfList@{mf::mfList}!lsize@{lsize}}
+\index{lsize@{lsize}!mf::mfList@{mf::mfList}}
+\subsubsection[{lsize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf mf::mfList}$<$ T $>$::{\bf lsize}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classmf_1_1mfList_a05d51ad01af004b129160206f8434ff9}
+List size 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mfList_8h}{mfList.h}\end{DoxyCompactItemize}

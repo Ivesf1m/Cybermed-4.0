@@ -1,0 +1,88 @@
+\hypertarget{classmf_1_1mfReader}{
+\section{mf::mfReader$<$ \_\-Traits $>$ Class Template Reference}
+\label{classmf_1_1mfReader}\index{mf::mfReader@{mf::mfReader}}
+}
+
+
+Modelo dos leitores de arquivos.  
+
+
+
+
+{\ttfamily \#include $<$mfReader.h$>$}
+
+Inheritance diagram for mf::mfReader$<$ \_\-Traits $>$:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.776699cm]{classmf_1_1mfReader}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmf_1_1mfReader_adbfe30c978c75ac98182d644b1b24752}{
+typedef \_\-Traits::sMesh {\bfseries sMesh}}
+\label{classmf_1_1mfReader_adbfe30c978c75ac98182d644b1b24752}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfReader_a89a276eec0dbdb75a7985f894008959b}{mfReader} ()
+\item 
+virtual \hyperlink{classmf_1_1mfReader_ab0000ca6770e8bff2ea46fec0fb8b83e}{$\sim$mfReader} ()
+\item 
+virtual bool \hyperlink{classmf_1_1mfReader_a0e0c3224a06b06a8fb82be4f0f4a2e00}{read} (sMesh $\ast$malha, const char $\ast$filename)=0
+\begin{DoxyCompactList}\small\item\em Executa a leitura de um arquivo. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class \_\-Traits$>$ class mf::mfReader$<$ \_\-Traits $>$}
+
+Modelo dos leitores de arquivos. Esta classe eh abstrata, devendo servir apenas de molde para novas implementacoes de leitores de arquivos. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfReader_a89a276eec0dbdb75a7985f894008959b}{
+\index{mf::mfReader@{mf::mfReader}!mfReader@{mfReader}}
+\index{mfReader@{mfReader}!mf::mfReader@{mf::mfReader}}
+\subsubsection[{mfReader}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfReader}$<$ \_\-Traits $>$::{\bf mfReader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfReader_a89a276eec0dbdb75a7985f894008959b}
+Construtor \hypertarget{classmf_1_1mfReader_ab0000ca6770e8bff2ea46fec0fb8b83e}{
+\index{mf::mfReader@{mf::mfReader}!$\sim$mfReader@{$\sim$mfReader}}
+\index{$\sim$mfReader@{$\sim$mfReader}!mf::mfReader@{mf::mfReader}}
+\subsubsection[{$\sim$mfReader}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ {\bf mf::mfReader}$<$ \_\-Traits $>$::$\sim${\bf mfReader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classmf_1_1mfReader_ab0000ca6770e8bff2ea46fec0fb8b83e}
+Destrutor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfReader_a0e0c3224a06b06a8fb82be4f0f4a2e00}{
+\index{mf::mfReader@{mf::mfReader}!read@{read}}
+\index{read@{read}!mf::mfReader@{mf::mfReader}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \_\-Traits $>$ virtual bool {\bf mf::mfReader}$<$ \_\-Traits $>$::read (
+\begin{DoxyParamCaption}
+\item[{sMesh $\ast$}]{malha, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classmf_1_1mfReader_a0e0c3224a06b06a8fb82be4f0f4a2e00}
+
+
+Executa a leitura de um arquivo. 
+
+Paraetros de entrada: malha : endereco de memoria de destino da malha a ser carregada. Ja deve estar alocado. filename : nome do arquivo da malha. 
+
+Implemented in \hyperlink{classmf_1_1mfMfReader_a9e43439ba77d2afb25839f3ed4fb774f}{mf::mfMfReader$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfOffReader_a40cf7f39c327b60827a5858dd3ec8ec9}{mf::mfOffReader$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfPlyReader_ad4aa817979acdfdc6570d2badb288bda}{mf::mfPlyReader$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfPolyDataReader_a2c013ff82158ddc91ab451257a3051d0}{mf::mfPolyDataReader$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfVtkReader_a3cbb607039dd5acf5aa0071f8ee49786}{mf::mfVtkReader$<$ \_\-Traits $>$}, \hyperlink{classmf_1_1mfWrlReader_a1d4c505e8e62204674aba4a36d47751e}{mf::mfWrlReader$<$ \_\-Traits $>$}, and \hyperlink{classmf_1_1myTsReader_a84fa0feda9979c77cfb609f3310fd31e}{mf::myTsReader$<$ \_\-Traits $>$}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+mfReader.h\end{DoxyCompactItemize}

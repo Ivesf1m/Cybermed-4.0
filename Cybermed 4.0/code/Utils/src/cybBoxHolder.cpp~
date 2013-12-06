@@ -1,0 +1,38 @@
+#include "cybBoxHolder.h"
+
+CybBoxHolder* CybBoxHolder::instance = NULL;
+
+CybBoxHolder::CybBoxHolder()
+{
+
+}
+
+void CybBoxHolder::addBox(CybBoxDrawer* box)
+{
+	boxList.push_back(box);
+}
+
+void CybBoxHolder::drawBoxes()
+{
+	list<CybBoxDrawer*>::iterator it;
+	for(it = boxList.begin(); it != boxList.end(); ++it)
+	{
+		(*it)->drawBox();
+	}
+}
+
+
+CybBoxHolder* CybBoxHolder::getInstance()
+{
+	if(!instance) instance = new CybBoxHolder();
+	return instance;
+}
+
+void CybBoxHolder::removeBox(CybBoxDrawer* box)
+{
+	list<CybBoxDrawer*>::iterator it;
+	for(it = boxList.begin(); it != boxList.end(); ++it)
+	{
+		if((*it) == box) boxList.remove(box);
+	}
+}

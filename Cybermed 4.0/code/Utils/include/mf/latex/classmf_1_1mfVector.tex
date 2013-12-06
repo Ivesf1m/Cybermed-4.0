@@ -1,0 +1,129 @@
+\hypertarget{classmf_1_1mfVector}{
+\section{mf::mfVector$<$ T, ids $>$ Class Template Reference}
+\label{classmf_1_1mfVector}\index{mf::mfVector@{mf::mfVector}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmf_1_1mfVector_a0da8bd0ec9d950ea861483a98742279f}{mfVector} (ids block\_\-size)
+\item 
+\hyperlink{classmf_1_1mfVector_a0a4211f585fb4c90903f4fb4cb537ffc}{$\sim$mfVector} ()
+\item 
+T \& \hyperlink{classmf_1_1mfVector_a64e970f09bc93f29cfb1c13f5d4b94c3}{operator\mbox{[}$\,$\mbox{]}} (ids index)
+\item 
+ids \hyperlink{classmf_1_1mfVector_a85cba970ce38323288765a11bd0a321d}{getFree} ()
+\item 
+void \hyperlink{classmf_1_1mfVector_a998fc56f4b71456e2f9190a187137ac5}{setSize} (ids size)
+\item 
+ids \hyperlink{classmf_1_1mfVector_aa17e54b06d847676e2a04e039f4a794c}{getSize} ()
+\item 
+ids \hyperlink{classmf_1_1mfVector_a02d620a56b57de218bf625192a6b5134}{getMaxId} ()
+\item 
+bool \hyperlink{classmf_1_1mfVector_a344ecc1e67e566793948a5c0152944aa}{free} (ids index)
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$class T, class ids$>$ class mf::mfVector$<$ T, ids $>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmf_1_1mfVector_a0da8bd0ec9d950ea861483a98742279f}{
+\index{mf::mfVector@{mf::mfVector}!mfVector@{mfVector}}
+\index{mfVector@{mfVector}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{mfVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids$>$ {\bf mf::mfVector}$<$ T, ids $>$::{\bf mfVector} (
+\begin{DoxyParamCaption}
+\item[{ids}]{block\_\-size}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a0da8bd0ec9d950ea861483a98742279f}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\_\-size,:} & the size of each block (The maximum capacity of vector if : block\_\-size $\ast$ block\_\-size) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfVector_a0a4211f585fb4c90903f4fb4cb537ffc}{
+\index{mf::mfVector@{mf::mfVector}!$\sim$mfVector@{$\sim$mfVector}}
+\index{$\sim$mfVector@{$\sim$mfVector}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{$\sim$mfVector}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids $>$ {\bf mf::mfVector}$<$ T, ids $>$::$\sim${\bf mfVector} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a0a4211f585fb4c90903f4fb4cb537ffc}
+Destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmf_1_1mfVector_a344ecc1e67e566793948a5c0152944aa}{
+\index{mf::mfVector@{mf::mfVector}!free@{free}}
+\index{free@{free}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{free}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids$>$ bool {\bf mf::mfVector}$<$ T, ids $>$::free (
+\begin{DoxyParamCaption}
+\item[{ids}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a344ecc1e67e566793948a5c0152944aa}
+Delete a position in vector
+
+\begin{DoxyReturn}{Returns}
+true if this position was deleted 
+\end{DoxyReturn}
+\hypertarget{classmf_1_1mfVector_a85cba970ce38323288765a11bd0a321d}{
+\index{mf::mfVector@{mf::mfVector}!getFree@{getFree}}
+\index{getFree@{getFree}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{getFree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids $>$ ids {\bf mf::mfVector}$<$ T, ids $>$::getFree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a85cba970ce38323288765a11bd0a321d}
+Return a free position in vector \hypertarget{classmf_1_1mfVector_a02d620a56b57de218bf625192a6b5134}{
+\index{mf::mfVector@{mf::mfVector}!getMaxId@{getMaxId}}
+\index{getMaxId@{getMaxId}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{getMaxId}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids $>$ ids {\bf mf::mfVector}$<$ T, ids $>$::getMaxId (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a02d620a56b57de218bf625192a6b5134}
+Return the maximum position in vector \hypertarget{classmf_1_1mfVector_aa17e54b06d847676e2a04e039f4a794c}{
+\index{mf::mfVector@{mf::mfVector}!getSize@{getSize}}
+\index{getSize@{getSize}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids $>$ ids {\bf mf::mfVector}$<$ T, ids $>$::getSize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_aa17e54b06d847676e2a04e039f4a794c}
+Return the number of elements in vector \hypertarget{classmf_1_1mfVector_a64e970f09bc93f29cfb1c13f5d4b94c3}{
+\index{mf::mfVector@{mf::mfVector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids$>$ T \& {\bf mf::mfVector}$<$ T, ids $>$::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{ids}]{index}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a64e970f09bc93f29cfb1c13f5d4b94c3}
+Return the specified element
+
+
+\begin{DoxyParams}{Parameters}
+{\em index,:} & position of element \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmf_1_1mfVector_a998fc56f4b71456e2f9190a187137ac5}{
+\index{mf::mfVector@{mf::mfVector}!setSize@{setSize}}
+\index{setSize@{setSize}!mf::mfVector@{mf::mfVector}}
+\subsubsection[{setSize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T , class ids$>$ void {\bf mf::mfVector}$<$ T, ids $>$::setSize (
+\begin{DoxyParamCaption}
+\item[{ids}]{size}
+\end{DoxyParamCaption}
+)}}
+\label{classmf_1_1mfVector_a998fc56f4b71456e2f9190a187137ac5}
+Define the number of elements in vector
+
+(DONT USE) 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mfVector_8h}{mfVector.h}\end{DoxyCompactItemize}

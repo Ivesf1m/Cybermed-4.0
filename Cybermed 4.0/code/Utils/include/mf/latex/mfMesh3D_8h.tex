@@ -1,0 +1,63 @@
+\hypertarget{mfMesh3D_8h}{
+\section{mfMesh3D.h File Reference}
+\label{mfMesh3D_8h}\index{mfMesh3D.h@{mfMesh3D.h}}
+}
+
+
+Mesh Class This class must be initialized with elements types (vertices and cells) and the operation class. Operation class depends of the vertices and cells dimensions. \_\-Traits must have: space, ids, sVertex, sCell, sEdge , sOper.  
+
+
+{\ttfamily \#include \char`\"{}mfMacros.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mfVector.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classmf_1_1mfMesh3D}{mf::mfMesh3D$<$ \_\-Traits $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespacemf}{mf}
+\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{mfMesh3D_8h_aa88ff7d611e26703bc645eb3acd225f7}{
+\#define {\bfseries IDS}~typename mfMesh3D$<$\_\-Traits$>$::ids}
+\label{mfMesh3D_8h_aa88ff7d611e26703bc645eb3acd225f7}
+
+\item 
+\hypertarget{mfMesh3D_8h_a8d710ed31e88dfc7b9a78a98a39d2da8}{
+\#define {\bfseries SVERTEX}~typename mfMesh3D$<$\_\-Traits$>$::sVertex}
+\label{mfMesh3D_8h_a8d710ed31e88dfc7b9a78a98a39d2da8}
+
+\item 
+\hypertarget{mfMesh3D_8h_a037e9cf6a1c91e1bc13ee32edb5058fb}{
+\#define {\bfseries SCELL}~typename mfMesh3D$<$\_\-Traits$>$::sCell}
+\label{mfMesh3D_8h_a037e9cf6a1c91e1bc13ee32edb5058fb}
+
+\item 
+\hypertarget{mfMesh3D_8h_acb5cecc15e2452b8b1e880374e6ecab6}{
+\#define {\bfseries SEDGE}~typename mfMesh3D$<$\_\-Traits$>$::sEdge}
+\label{mfMesh3D_8h_acb5cecc15e2452b8b1e880374e6ecab6}
+
+\item 
+\hypertarget{mfMesh3D_8h_a54ae25149ea34f7a1f109a3c178c9012}{
+\#define {\bfseries SFACE}~typename mfMesh3D$<$\_\-Traits$>$::sFace}
+\label{mfMesh3D_8h_a54ae25149ea34f7a1f109a3c178c9012}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mesh Class This class must be initialized with elements types (vertices and cells) and the operation class. Operation class depends of the vertices and cells dimensions. \_\-Traits must have: space, ids, sVertex, sCell, sEdge , sOper. \begin{DoxyAuthor}{Author}
+Mario Lizier 
+
+Icaro da Cunha 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2007, july 
+\end{DoxyDate}

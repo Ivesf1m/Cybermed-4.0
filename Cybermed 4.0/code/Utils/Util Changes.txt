@@ -1,0 +1,69 @@
+Changes in Include
+	cybTraits.h
+		#include "mf/mfMeshTriSurface.h"
+		#include "mf/mfTopology.h"
+		#include "mf/mfGeometric.h"
+
+		namespace mf
+
+		Add typedef mfEdge<cybTraits>				sEdge;		/**< Edge definition */
+
+		typedef mfMesh<cybTraits>				sMesh;
+		typedef mfMeshTriSurface<cybTraits>			sOper;
+
+		typedef mfGeometric<cybTraits>				sGeometric;
+		typedef mfTopology<cybTraits>				sTopology;
+
+	cybVertex.h
+		#include "mf/mfMacros.h"
+		#include "mf/mfVertex3D.h"
+
+		namespace mf
+
+		template <class _Traits> class cybVertex: public mfVertex3D<_Traits>
+
+	cybCell.h
+		#include "mf/mfMacros.h"
+		#include "mf/mfTriCell.h"
+		#include "mf/mfVertexStarIteratorTriSurf.h"		
+		#include "mf/mfMesh.h"
+
+		namespace mf
+
+		template <class _Traits> class cybCell: public mfTriCell<_Traits>
+
+		In updateVertexesNormalVector(sMesh *mesh)
+			mfVertexStarIteratorTriSurf<_Traits> its(mesh);
+
+	cybMesh.h
+		#include "mf/mfMacros.h"
+		#include "mf/mfVector.h"
+		#include "mf/mf.h"
+
+		namespace mf
+
+		template <class _Traits> class cybMesh : public mfMesh<_Traits>
+
+		ids addCell(ids *idvertices MF_DMUTEXVD);
+
+		template <class _Traits> IDS cybMesh<_Traits>::addCell(ids *idvertices MF_DMUTEXV)
+
+		In addCell(ids *idvertices MF_DMUTEXV)
+			idCell = mfMesh<_Traits>::addCell(idvertices);
+
+		In updateCellVerticesNormal(int idCell)
+			mfVertexStarIteratorTriSurf<_Traits> its(this);
+
+		In updateVertexNormalVector(ids idVertex)
+			mfVertexStarIteratorTriSurf<_Traits> its(this), auxits(this);
+
+	cybMenu.h
+		#include "mf/mfList.h"
+
+		using namespace mf;
+
+		mfList<CybMenuNode*> elements;
+		mfList<CybMenu*> submenu;
+
+Changes in SRC
+	No changes.

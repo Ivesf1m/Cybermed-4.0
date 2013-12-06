@@ -1,0 +1,6 @@
+#include "cybBoxDrawer.h"
+
+CybBoxDrawer::CybBoxDrawer()
+{
+
+}
