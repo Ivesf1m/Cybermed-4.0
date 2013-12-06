@@ -1,0 +1,17 @@
+Instalação de web cam no linux. Modelo Logitech QuickCam 4000 pro
+
+Primeiro baixei o src do driver pwc no site http://www.saillard.org/
+
+Depois baixei os cabecalhos do kernel com o comando yum isntall kernel-devel
+
+Depois que o yum instalou os cabeçalhos do kernel eu compilei o módulo que baixei no site citado acima.
+
+Depois fui no arquivo /etc/modprobe.conf e comentei a linha pwc index = 1 com o caracter '#'
+
+Depois carreguei o módulo pwc com o seguinte comando
+
+/sbin/modprobe pwc
+
+E testei com o koppete, as duas câmeras estão funcionando.
+
+Daniel Faustino 20/08/2007

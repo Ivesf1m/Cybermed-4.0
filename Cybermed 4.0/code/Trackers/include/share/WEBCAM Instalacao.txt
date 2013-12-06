@@ -1,0 +1,8 @@
+How to Install web cams on Linux-Fedora Models Logitech QuickCam 4000 pro
+
+1- Download the source code of driver pwc on http://www.saillard.org/
+2- Download the header's kernel with yum install kernel-devel 
+3- Compile the module downloaded on step-1 
+4- Coment the line "pwc index = 1" on the file /etc/modprobe.conf 
+5- Load the module with: /sbin/modprobe pwc
+6- Test the web-cams with koppete applicaions
