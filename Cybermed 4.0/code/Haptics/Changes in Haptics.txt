@@ -1,0 +1,10 @@
+In include
+	cybPhantom.h
+		#ifndef MF_H
+		#include "mf/mf.h"
+		#endif
+
+In SRC
+	cybHapticInterator.cpp
+		In drawHapticsCursor()
+			mfCellsIterator<cybTraits> cellsIterator(mesh);
